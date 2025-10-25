@@ -17,6 +17,7 @@ wait 0.
 global atmHeight is 80_000.
 global atmTransition is 56_000.
 
+
 // STARTING A NEW MISSION
 
 global function logMission {
@@ -51,11 +52,11 @@ global function logGeneralInfo {
   emptyLogLine().
   
   logSection("INFORMATIONS GÉNÉRALES").
-  print "Date enregistrée". wait 0.2.
+  print "Date enregistrée". wait 0.1.
   addLogLeftEntry("DATE            : " + timestamp(time:seconds):full).
   emptyLogLine().
   
-  print "Enregistrement vaisseau en cours". wait 0.2.
+  print "Enregistrement vaisseau en cours". wait 0.1.
   addLogLeftEntry("VAISSEAU        : " + ship:name).
   local crewList is ship:crew().
   if crewList:length = 0 {
@@ -68,13 +69,13 @@ global function logGeneralInfo {
   }
   emptyLogLine().
   //addLogLeftEntry("DESCRIPTION     : " + description).
-  print "☑ Coût". wait 0.1.
+  print "☑ Coût". wait 0.05.
   addLogLeftEntry("COÛT            : √ " + grandNombre(round(cout,2),2)).
-  print "☑ Masse". wait 0.1.
+  print "☑ Masse". wait 0.05.
   addLogLeftEntry("MASSE           : " + round(ship:mass, 3) + " t").
-  print "☑ Rapport Poussée-Poids". wait 0.1.
+  print "☑ Rapport Poussée-Poids". wait 0.05.
   addLogLeftEntry("RPP             : " + round(calculTWR(), 2)).
-  print "☑ Nombre d'étages". wait 0.1.
+  print "☑ Nombre d'étages". wait 0.05.
   addLogLeftEntry("Nombre d'étages : " + ship:stageNum).
   
   emptyLogLine().
@@ -315,7 +316,7 @@ global function emptyLogLine {
     set i to i + 1.
   }
   set emptyLine to emptyLine + border.
-  log emptyLine to fileName.
+  if (core:volume:freespace > 250 or homeConnection:isConnected) {log emptyLine to fileName.}
 }
 
 global function underscoreLogLine {
@@ -336,7 +337,7 @@ global function underscoreLogLine {
     }
   }
   set underscoreLine to underscoreLine + border.
-  log underscoreLine to fileName.
+  if (core:volume:freespace > 250 or homeConnection:isConnected) {log underscoreLine to fileName.}
 }
 
 global function upperscoreLogLine {
@@ -357,7 +358,7 @@ global function upperscoreLogLine {
     }
   }
   set upperscoreLine to upperscoreLine + border.
-  log upperscoreLine to fileName.
+  if (core:volume:freespace > 250 or homeConnection:isConnected) {log upperscoreLine to fileName.}
 }
 
 global function addLogCenterEntry {
@@ -381,7 +382,7 @@ global function addLogCenterEntry {
     set i to i + 1.
   }
   set printcEntry to printcEntry + "|".
-  log printcEntry to fileName.
+  if (core:volume:freespace > 250 or homeConnection:isConnected) {log printcEntry to fileName.}
 }
 
 global function addLogLeftEntry {
@@ -399,7 +400,7 @@ global function addLogLeftEntry {
     set i to i + 1.
   }
   set printlEntry to printlEntry + "|".
-  log printlEntry to fileName.
+  if (core:volume:freespace > 250 or homeConnection:isConnected) {log printlEntry to fileName.}
 }
 
 global function addLogItem {

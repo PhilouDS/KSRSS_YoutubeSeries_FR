@@ -122,8 +122,8 @@ global function exeMnv{
     local isDone to false.
 
     if active_rcs = true {
-      until theNextNode:eta <= (burnTime/2)
-        {print "Maneuver in: " + round(theNextNode:ETA - burnTime/2, 2) + " s      " at (0,2).}
+      until theNextNode:eta <= (burnTime/2) + 0.1
+        {print "Manoeuvre dans : " + round(theNextNode:ETA - burnTime/2, 2) + " s      " at (0,(terminal:height - 2)).}
         lock throttle to throt.
     }
     else {
@@ -133,8 +133,8 @@ global function exeMnv{
       wait 0.
       alignFacing(theNextNode:burnVector).
       wait 0.
-      until theNextNode:eta <= (burnTime/2)
-        {print "Maneuver in: " + round(theNextNode:ETA - burnTime/2, 2) + " s      " at (0,3).}
+      until theNextNode:eta <= (burnTime/2) + 0.1
+        {print "Manoeuvre dans : " + round(theNextNode:ETA - burnTime/2, 2) + " s      " at (0,(terminal:height - 2)).}
       lock throttle to 1.
     }
 
@@ -348,3 +348,62 @@ function correctionRelativeInclination{
   wait 0.5.
 }
 
+
+
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+// MODIFIER L'INCLINAISON DE L'ORBITE ACTUELLE
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+function correctionAbsoluteInclination{
+  parameter targetInc.
+  parameter loc is "AN".
+
+  local theAngleNode is ship:orbit:LAN.
+  local aVector is theNormalVector("anti").
+  local deltaInc is 1_000.
+
+  if loc = "DN" {
+    local LDN is 180 + ship:orbit:LAN.
+    set LDN to LDN - 360*floor(LDN / 360).
+    set theAngleNode to LDN.
+    set aVector to theNormalVector().
+  }
+
+  lock steering to aVector.
+  alignFacing(aVector,1).
+  wait 1.
+  set warp to 4.
+
+  wait until vernalAngle() < theAngleNode - 2 and vernalAngle() > theAngleNode - 5.
+  set warp to 2.
+  wait until abs(vernalAngle() - theAngleNode) <= 0.5.
+  set warp to 0.
+  wait until kuniverse:timewarp:rate = 1.
+  alignFacing(aVector,1).
+  lock throttle to 0.5.
+  until abs(ship:orbit:inclination - targetInc) > deltaInc {
+    set deltaInc to abs(ship:orbit:inclination - targetInc).
+    print deltaInc at (0,terminal:height - 3).
+    print abs(ship:orbit:inclination - targetInc) at (0,terminal:height - 2).
+    wait 0.1.
+  }
+  lock throttle to 0.
+  wait 0.5.
+  print "New inclination: " + round(ship:orbit:inclination, 3) + "°".
+  logFlightEvent("Inclinaison de l'orbite corrigée : " + round(ship:orbit:inclination, 3) + "°").
+  wait 0.5.
+}
+
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+// GEOSTATIONARY ALTITUDE
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+global function geoAlt {
+  // geostationary altitude from body's center of mass
+  set geo to ((ship:body:mu * ship:body:rotationPeriod^2) / (4 * constant:PI^2))^(1/3).
+  return geo.  
+}

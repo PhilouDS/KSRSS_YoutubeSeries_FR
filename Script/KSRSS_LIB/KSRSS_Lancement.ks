@@ -30,22 +30,6 @@ global moonPeriod is Moon:orbit:period.
 
 //_________________________________________________
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-// SAVES
-//_________________________________________________
-//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-
-global function startSave {
-  wait until kUniverse:canquicksave.
-  kUniverse:quicksaveto(ship:name + " - début").
-}
-
-global function saveSituation {
-  parameter situation.
-  wait until kUniverse:canquicksave.
-  kUniverse:quicksaveto(ship:name + " - situation - " + situation).
-}
-//_________________________________________________
-//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 // LIFTOFF
 //_________________________________________________
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾

@@ -3,6 +3,12 @@ if exists("lib:/KSRSS_log") {
   runOncePath("lib:/KSRSS_log").
 } else {runOncePath("main:/KSRSS_log").}
 
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+// TERMINAL
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
 global function openTerminal {
   parameter theHeight is 30.
   parameter theWidth is 45.
@@ -15,6 +21,39 @@ global function openTerminal {
 global function closeTerminal {
   core:part:getModule("kosProcessor"):doEvent("close terminal").
 }
+
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+// SAVES
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+global function startSave {
+  local save_chrono is time:seconds.
+  until kuniverse:canquicksave {
+    if (time:seconds - save_chrono > 2) {break.}
+  }
+  if (kUniverse:canquicksave) {
+    kUniverse:quicksaveto(ship:name + " - début").
+  }
+}
+
+global function saveSituation {
+  parameter situation.
+  local save_chrono is time:seconds.
+  until kuniverse:canquicksave {
+    if (time:seconds - save_chrono > 2) {break.}
+  }
+  if (kUniverse:canquicksave) {
+    kUniverse:quicksaveto(ship:name + " - situation - " + situation).
+  }
+}
+
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+// MISSION
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 
 global function endProgram {
   parameter maxAltitude is -1.
@@ -42,6 +81,12 @@ global function endProgram {
       wait until addons:career:Recovervessel(ship).
     }
 }
+
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+// ENGINES
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 
 global function listOfEngines {
   list ENGINES in myEnginesList.
@@ -84,6 +129,12 @@ global function thrustLimiter {
     print eng:name + " : " + eng:thrustLimit.
   }
 }
+
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+// NAVIGATION
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 
 global function doWarp {
   parameter aTime.
@@ -153,4 +204,27 @@ function goToRelativeNode {
   alignFacing(targetVector).
   doWarp(timeToTargetNode).
   wait 0.5.
+}
+
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+// LISTS RELATED
+//_________________________________________________
+//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+function minOf {
+  parameter aList.
+  local theMinimum is aList[0].
+  for I in range(aList:length - 1) {
+    if aList[I] < theMinimum {set theMinimum to aList[I].}
+  }
+  return theMinimum.
+}
+
+function maxOf {
+  parameter aList.
+  local theMaximum is aList[0].
+  for I in range(aList:length - 1) {
+    if aList[I] > theMaximum {set theMaximum to aList[I].}
+  }
+  return theMaximum.
 }
