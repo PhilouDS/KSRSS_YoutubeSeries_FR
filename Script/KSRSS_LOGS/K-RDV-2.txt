@@ -1,0 +1,82 @@
+·_________________________________________________________________________________________·
+|                         ~ RÉCUPÉRATION DES DONNÉES SCIENCE JR ~                         |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 70558.9                                                                   |
+|SCIENCE    : ☆ 24.32                                                                     |
+|RÉPUTATION : ☺ 264.75                                                                    |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 2 Day 236 08:05:52                                                |
+|                                                                                         |
+|VAISSEAU        : K-RDV-2                                                                |
+|  · Bob Kerman - Scientifique (XP 2)                                                     |
+|                                                                                         |
+|COÛT            : √ 25434.33                                                             |
+|MASSE           : 47.728 t                                                               |
+|RPP             : 1.19                                                                   |
+|Nombre d'étages : 8                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    : 213581.35 m                                                      |
+|INCLINAISON SOUHAITÉE : 5.10000185229983°                                                |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|                                                                                         |
+|T+ 00:00:00 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:21 : Début du Gravity Turn                                                      |
+|  · Vitesse initiale : 61.1 m/s.                                                         |
+|  · Angle initial    : 85°                                                               |
+|                                                                                         |
+|T+ 00:00:30 : Suivi du prograde : 93.2 m/s.                                              |
+|                                                                                         |
+|T+ 00:01:58 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.59                                                        |
+|  · ALTITUDE               : 30247.13 m                                                  |
+|  · VITESSE SURFACE        : 1160.55 m/s                                                 |
+|  · VITESSE ORBITALE       : 1368.85 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.042 ATM / 4.282 kPA                                       |
+|                                                                                         |
+|T+ 00:02:28 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 2.26                                                        |
+|  · ALTITUDE               : 47255.3 m                                                   |
+|  · VITESSE SURFACE        : 1506.66 m/s                                                 |
+|  · VITESSE ORBITALE       : 1730.58 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.005 ATM / 0.508 kPA                                       |
+|                                                                                         |
+|T+ 00:03:27 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.44                                                        |
+|  · ALTITUDE               : 80281.88 m                                                  |
+|  · VITESSE SURFACE        : 2897.79 m/s                                                 |
+|  · VITESSE ORBITALE       : 3136.12 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0 ATM / 0 kPA                                               |
+|                                                                                         |
+|T+ 00:03:28 : Espace atteint                                                             |
+|                                                                                         |
+|T+ 00:04:01 : Fin du Gravity Turn                                                        |
+|                                                                                         |
+|T+ 00:04:03 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 3286.88 m/s.                                                      |
+|  · Vitesse finale   : 3713.47 m/s.                                                      |
+|  · Delta-V          : 426.6 m/s.                                                        |
+|                                                                                         |
+|T+ 00:04:08 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 26.33 s.                                                     |
+|  · Temps avant manoeuvre : 00:05:54 s.                                                  |
+|                                                                                         |
+|T+ 04:37:48 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : -01:-01:-04 s.                                               |
+|                                                                                         |
+|T+ 04:37:52 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 04:38:07 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 04:38:07 : Vitesse actuelle : 3786.55 m/s                                             |

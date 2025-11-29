@@ -1,0 +1,215 @@
+·_________________________________________________________________________________________·
+|                       ~ MISSION DE SAUVETAGE - Pierbéron Kerman ~                       |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# VAISSEAU EN DÉTRESSE                                                                   |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|Nous partons au secours de : Pierbéron Kerman                                            |
+|Son vaisseau est actuellement à 85807.96 m d'altitude.                                   |
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 147656.59                                                                 |
+|SCIENCE    : ☆ 336.49                                                                    |
+|RÉPUTATION : ☺ 428.17                                                                    |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 3 Day 80 01:08:02                                                 |
+|                                                                                         |
+|VAISSEAU        : K-Sauvetage                                                            |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT                 : √ 27551.33                                                        |
+|HAUTEUR              : 24.25 m                                                           |
+|MASSE                : 48.99 t                                                           |
+|RPP                  : 1.16                                                              |
+|Nombre d'étages      : 8                                                                 |
+|Nombre de composants : 44                                                                |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    : 177209.48 m                                                      |
+|INCLINAISON SOUHAITÉE : 5.10000375473551°                                                |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|                                                                                         |
+|T+ 00:00:00 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:23 : Début du Gravity Turn                                                      |
+|  · Vitesse initiale : 61 m/s.                                                           |
+|  · Angle initial    : 85°                                                               |
+|                                                                                         |
+|T+ 00:00:33 : Suivi du prograde : 92.1 m/s.                                              |
+|                                                                                         |
+|T+ 00:01:58 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.47                                                        |
+|  · ALTITUDE               : 26647.8 m                                                   |
+|  · VITESSE SURFACE        : 1060.68 m/s                                                 |
+|  · VITESSE ORBITALE       : 1273.85 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.07 ATM / 7.048 kPA                                        |
+|                                                                                         |
+|T+ 00:02:28 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.99                                                        |
+|  · ALTITUDE               : 40005.52 m                                                  |
+|  · VITESSE SURFACE        : 1377.92 m/s                                                 |
+|  · VITESSE ORBITALE       : 1606.26 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.012 ATM / 1.223 kPA                                       |
+|                                                                                         |
+|T+ 00:03:27 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.08                                                        |
+|  · ALTITUDE               : 59287.36 m                                                  |
+|  · VITESSE SURFACE        : 2605.94 m/s                                                 |
+|  · VITESSE ORBITALE       : 2844.86 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.002 ATM / 0.227 kPA                                       |
+|                                                                                         |
+|T+ 00:05:00 : Fin du Gravity Turn                                                        |
+|                                                                                         |
+|T+ 00:06:15 : Espace atteint                                                             |
+|                                                                                         |
+|T+ 00:06:16 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 3684.3 m/s.                                                       |
+|  · Vitesse finale   : 3750.82 m/s.                                                      |
+|  · Delta-V          : 66.52 m/s.                                                        |
+|                                                                                         |
+|T+ 00:06:25 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : 00:16:46 s.                                                  |
+|                                                                                         |
+|T+ 00:23:12 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 00:23:27 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 00:23:27 : Vitesse actuelle : 3750.82 m/s                                             |
+|                                                                                         |
+|# INFORMATIONS DE L'ORBITE                                                               |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|Apogée                       : 178053.66 m                                               |
+|Périgée                      : 178012.7 m                                                |
+|Argument du périgée          : 334.29°                                                   |
+|Excentricité                 : 0.12 x 10^(-4)                                            |
+|Période orbitale             : 00:49:26                                                  |
+|Inclinaison                  : 5.039°                                                    |
+|Longitude du noeud ascendant : 75.6°                                                     |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:39:49 : Nouvelle inclinaison relative avec VESSEL("RDV") : 0.1155°                 |
+|                                                                                         |
+|T+ 00:39:50 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 3696.58 m/s.                                                      |
+|  · Vitesse finale   : 3714.68 m/s.                                                      |
+|  · Delta-V          : 18.1 m/s.                                                         |
+|                                                                                         |
+|T+ 00:39:58 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : 00:25:32 s.                                                  |
+|                                                                                         |
+|T+ 01:05:31 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 01:05:45 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 01:05:45 : Vitesse actuelle : 3714.66 m/s                                             |
+|                                                                                         |
+|T+ 01:05:46 : Début de la procédure de rendez-vous                                       |
+|                                                                                         |
+|T+ 02:08:19 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 3714.71 m/s.                                                      |
+|  · Vitesse finale   : 3655.12 m/s.                                                      |
+|  · Delta-V          : -59.59 m/s.                                                       |
+|                                                                                         |
+|T+ 02:15:52 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : 00:19:09 s.                                                  |
+|                                                                                         |
+|T+ 02:35:02 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 02:35:16 : Coupure des moteurs : fin de la manoeuvre                                  |
+·_________________________________________________________________________________________·
+|                       ~ MISSION DE SAUVETAGE - Réceline Kerman ~                        |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# VAISSEAU EN DÉTRESSE                                                                   |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|Nous partons au secours de : Réceline Kerman                                             |
+|Son vaisseau est actuellement à 96058.43 m d'altitude.                                   |
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 7829.64                                                                   |
+|SCIENCE    : ☆ 429.14                                                                    |
+|RÉPUTATION : ☺ 430.89                                                                    |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 3 Day 99 05:45:49                                                 |
+|                                                                                         |
+|VAISSEAU        : K-Sauvetage                                                            |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT                 : √ 27551.33                                                        |
+|HAUTEUR              : 24.25 m                                                           |
+|MASSE                : 48.99 t                                                           |
+|RPP                  : 1.16                                                              |
+|Nombre d'étages      : 8                                                                 |
+|Nombre de composants : 44                                                                |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    : 169334.65 m                                                      |
+|INCLINAISON SOUHAITÉE : 5.10000323194742°                                                |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|                                                                                         |
+|T+ 00:00:00 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:23 : Début du Gravity Turn                                                      |
+|  · Vitesse initiale : 61 m/s.                                                           |
+|  · Angle initial    : 85°                                                               |
+|                                                                                         |
+|T+ 00:00:33 : Suivi du prograde : 92.4 m/s.                                              |
+|                                                                                         |
+|T+ 00:01:58 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.47                                                        |
+|  · ALTITUDE               : 26764.51 m                                                  |
+|  · VITESSE SURFACE        : 1059.72 m/s                                                 |
+|  · VITESSE ORBITALE       : 1272.37 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.068 ATM / 6.873 kPA                                       |
+|                                                                                         |
+|T+ 00:02:28 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 2                                                           |
+|  · ALTITUDE               : 40310.33 m                                                  |
+|  · VITESSE SURFACE        : 1376 m/s                                                    |
+|  · VITESSE ORBITALE       : 1604.01 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.011 ATM / 1.162 kPA                                       |
+|                                                                                         |
+|T+ 00:03:27 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.08                                                        |
+|  · ALTITUDE               : 60234.78 m                                                  |
+|  · VITESSE SURFACE        : 2600.96 m/s                                                 |
+|  · VITESSE ORBITALE       : 2839.9 m/s                                                  |
+|  · PRESSION ATMOSPHÉRIQUE : 0.002 ATM / 0.192 kPA                                       |
+|                                                                                         |
+|T+ 00:05:00 : Fin du Gravity Turn                                                        |
+|                                                                                         |
+|T+ 00:05:44 : Espace atteint                                                             |
+|                                                                                         |
+|T+ 00:05:46 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 3693.27 m/s.                                                      |
+|  · Vitesse finale   : 3759.21 m/s.                                                      |
+|  · Delta-V          : 65.94 m/s.                                                        |
+|                                                                                         |
+|T+ 00:05:54 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : 00:15:42 s.                                                  |
+|                                                                                         |
+|T+ 05:28:01 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : 05:16:00 s.                                                  |
+|                                                                                         |
+|T+ 10:44:02 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 10:44:16 : Coupure des moteurs : fin de la manoeuvre                                  |

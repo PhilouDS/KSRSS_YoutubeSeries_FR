@@ -1,7 +1,14 @@
-//runOncePath("0:/KSRSS_LIB/KSRSS_Outils.ks").
-if exists("lib:/KSRSS_Outils") {
-  runOncePath("lib:/KSRSS_Outils").
-} else {runOncePath("main:/KSRSS_Outils").}
+list processors in proc.
+local idx is 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_Outils") {
+    runOncePath("lib" + idx + ":/KSRSS_Outils").
+    break.
+  } else { set idx to idx + 1.}
+}
+if idx = proc:length {
+  runOncePath("main:/KSRSS_Outils").
+}
 
 lock logDir to 
   choose "0:/KSRSS_LOGS/" if (homeConnection:isconnected)
@@ -34,6 +41,10 @@ global function logGeneralInfo {
   parameter theWantedAzimut is ship:geoposition:lat.
   parameter theLaunchAzimut is 90.
   parameter editor is "VAB".
+  local shipB is ship:bounds.
+  local P_TOP is shipB:furthestcorner(up:vector).
+  local P_BOTTOM is shipB:furthestcorner(-up:vector).
+  local shipHeight is vDot(P_TOP - P_BOTTOM, up:vector).
   local KSC_lat is ship:geoposition:lat.
   print "Enregistrement des infos générales".
   //set description to kuniverse:getCraft(ship:name, editor):description.
@@ -70,13 +81,17 @@ global function logGeneralInfo {
   emptyLogLine().
   //addLogLeftEntry("DESCRIPTION     : " + description).
   print "☑ Coût". wait 0.05.
-  addLogLeftEntry("COÛT            : √ " + grandNombre(round(cout,2),2)).
+  addLogLeftEntry("COÛT                 : √ " + grandNombre(round(cout,2),2)).
+  print "☑ Hauteur". wait 0.05.
+  addLogLeftEntry("HAUTEUR              : " + round(shipHeight,2) + " m").
   print "☑ Masse". wait 0.05.
-  addLogLeftEntry("MASSE           : " + round(ship:mass, 3) + " t").
+  addLogLeftEntry("MASSE                : " + round(ship:mass, 3) + " t").
   print "☑ Rapport Poussée-Poids". wait 0.05.
-  addLogLeftEntry("RPP             : " + round(calculTWR(), 2)).
+  addLogLeftEntry("RPP                  : " + round(calculTWR(), 2)).
   print "☑ Nombre d'étages". wait 0.05.
-  addLogLeftEntry("Nombre d'étages : " + ship:stageNum).
+  addLogLeftEntry("Nombre d'étages      : " + ship:stageNum).
+  print "☑ Nombre de composants". wait 0.05.
+  addLogLeftEntry("Nombre de composants : " + ship:parts:length).
   
   emptyLogLine().
 
@@ -411,5 +426,20 @@ global function addLogItem {
   }
   if loc = "center" {
     addLogCenterEntry("  · " + theItem).
+  }
+}
+
+global function transmitLog {
+  set transmit to 1.
+  when homeConnection:isconnected AND exists("main:/" + ship:name + ".txt") then {
+    wait 0.
+    copyPath("main:/" + ship:name + ".txt", "0:/KSRSS_LOGS/" + ship:name + "_transmission_" + transmit + ".txt").
+    wait 0.
+    deletePath("main:/" + ship:name + ".txt").
+    wait 0.
+    set transmit to transmit + 1.
+    print "Transmission du log de mission".
+    wait 0.
+    preserve.
   }
 }

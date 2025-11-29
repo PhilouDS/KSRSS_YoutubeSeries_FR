@@ -1,0 +1,99 @@
+·_________________________________________________________________________________________·
+|                                   ~ ORBITE POLAIRE ~                                    |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 23892.22                                                                  |
+|SCIENCE    : ☆ 7.96                                                                      |
+|RÉPUTATION : ☺ 209.86                                                                    |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 332 05:21:38                                                |
+|                                                                                         |
+|VAISSEAU        : LV1b+SB-MITE                                                           |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 19049                                                                |
+|MASSE           : 20.738 t                                                               |
+|RPP             : 1.38                                                                   |
+|Nombre d'étages : 5                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    : 120000 m                                                         |
+|INCLINAISON SOUHAITÉE : 90°                                                              |
+|AZIMUT DE LANCEMENT   : 356.528°                                                         |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:00 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:19 : Début du Gravity Turn                                                      |
+|  · Vitesse initiale : 86.8 m/s.                                                         |
+|  · Angle initial    : 85°                                                               |
+|                                                                                         |
+|T+ 00:00:29 : Suivi du prograde : 137.5 m/s.                                             |
+|                                                                                         |
+|T+ 00:01:17 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.53                                                        |
+|  · ALTITUDE               : 15428.53 m                                                  |
+|  · VITESSE SURFACE        : 454.58 m/s                                                  |
+|  · VITESSE ORBITALE       : 504.53 m/s                                                  |
+|  · PRESSION ATMOSPHÉRIQUE : 0.114 ATM / 11.506 kPA                                      |
+|                                                                                         |
+|T+ 00:02:36 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 2.82                                                        |
+|  · ALTITUDE               : 54342.51 m                                                  |
+|  · VITESSE SURFACE        : 1316.1 m/s                                                  |
+|  · VITESSE ORBITALE       : 1322.74 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.001 ATM / 0.129 kPA                                       |
+|                                                                                         |
+|T+ 00:03:25 : Espace atteint                                                             |
+|                                                                                         |
+|T+ 00:04:21 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 3.73                                                        |
+|  · ALTITUDE               : 101671.13 m                                                 |
+|  · VITESSE SURFACE        : 2927.43 m/s                                                 |
+|  · VITESSE ORBITALE       : 2921.37 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0 ATM / 0 kPA                                               |
+|                                                                                         |
+|T+ 00:04:25 : Fin du Gravity Turn                                                        |
+|                                                                                         |
+|T+ 00:04:29 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 2987.37 m/s.                                                      |
+|  · Vitesse finale   : 3813.78 m/s.                                                      |
+|  · Delta-V          : 826.41 m/s.                                                       |
+|                                                                                         |
+|T+ 00:04:32 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 21.32 s.                                                     |
+|  · Temps avant manoeuvre : 00:01:24 s.                                                  |
+|                                                                                         |
+|T+ 00:05:57 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 00:06:17 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 00:06:18 : Vitesse actuelle : 3816.27 m/s                                             |
+|                                                                                         |
+|# INFORMATIONS DE L'ORBITE                                                               |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|Apogée                       : 125078.1 m                                                |
+|Périgée                      : 119315.85 m                                               |
+|Argument du périgée          : 345.36°                                                   |
+|Excentricité                 : 16.8 x 10^(-4)                                            |
+|Période orbitale             : 00:47:07                                                  |
+|Inclinaison                  : 89.298°                                                   |
+|Longitude du noeud ascendant : 176.42°                                                   |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|_________________________________________________________________________________________|
+|                                  ~ FIN DE LA MISSION ~                                  |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+|                                                                                         |
+|# RÉCAPITULATIF                                                                          |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE DE FIN                : Year 1 Day 332 05:28:13                                     |
+|DURÉE DE LA MISSION        : 00:06:24                                                    |
+|                                                                                         |
+|_________________________________________________________________________________________|

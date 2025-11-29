@@ -1,0 +1,312 @@
+·_________________________________________________________________________________________·
+|                       ~ EXPÉRIENCES ATMOSPHÉRIQUES ET SPATIALES ~                       |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 24 837.75                                                                 |
+|SCIENCE    : 3.94                                                                        |
+|RÉPUTATION : 67.36                                                                       |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 121 05:27:32                                                |
+|                                                                                         |
+|VAISSEAU        : FS-CR-LQ                                                               |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 6 800.74                                                             |
+|MASSE           : 3.443 t                                                                |
+|RPP             : 1.57                                                                   |
+|Nombre d'étages : 2                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    :  m                                                               |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:00 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:47 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.58                                                        |
+|  · ALTITUDE               : 6 814.11 m                                                  |
+|  · VITESSE SURFACE        : 310.13 m/s                                                  |
+|  · VITESSE ORBITALE       : 278.94 m/s                                                  |
+|  · PRESSION ATMOSPHÉRIQUE : 0.236 ATM / 23.887 kPA                                      |
+·_________________________________________________________________________________________·
+|                       ~ EXPÉRIENCES ATMOSPHÉRIQUES ET SPATIALES ~                       |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 24 159.990000000002                                                       |
+|SCIENCE    : 3.94                                                                        |
+|RÉPUTATION : 67.36                                                                       |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 121 05:27:39                                                |
+|                                                                                         |
+|VAISSEAU        : FS-CR-LQ                                                               |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 7 155.74                                                             |
+|MASSE           : 3.713 t                                                                |
+|RPP             : 2.86                                                                   |
+|Nombre d'étages : 4                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    :  m                                                               |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:01 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:29 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 2.25                                                        |
+|  · ALTITUDE               : 7 175.22 m                                                  |
+|  · VITESSE SURFACE        : 317.94 m/s                                                  |
+|  · VITESSE ORBITALE       : 394.85 m/s                                                  |
+|  · PRESSION ATMOSPHÉRIQUE : 0.214 ATM / 21.712 kPA                                      |
+·_________________________________________________________________________________________·
+|                       ~ EXPÉRIENCES ATMOSPHÉRIQUES ET SPATIALES ~                       |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 24 159.990000000002                                                       |
+|SCIENCE    : 3.94                                                                        |
+|RÉPUTATION : 67.36                                                                       |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 121 05:27:34                                                |
+|                                                                                         |
+|VAISSEAU        : FS-CR-LQ                                                               |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 7 155.74                                                             |
+|MASSE           : 3.713 t                                                                |
+|RPP             : 2.86                                                                   |
+|Nombre d'étages : 4                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    :  m                                                               |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:01 : Décollage                                                                  |
+·_________________________________________________________________________________________·
+|                       ~ EXPÉRIENCES ATMOSPHÉRIQUES ET SPATIALES ~                       |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 23 430.919999999998                                                       |
+|SCIENCE    : 3.94                                                                        |
+|RÉPUTATION : 67.36                                                                       |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 121 05:27:33                                                |
+|                                                                                         |
+|VAISSEAU        : FS-CR-LQ                                                               |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 7 241.74                                                             |
+|MASSE           : 3.936 t                                                                |
+|RPP             : 2.7                                                                    |
+|Nombre d'étages : 2                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    :  m                                                               |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:01 : Décollage                                                                  |
+·_________________________________________________________________________________________·
+|                       ~ EXPÉRIENCES ATMOSPHÉRIQUES ET SPATIALES ~                       |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 23 430.919999999998                                                       |
+|SCIENCE    : 3.94                                                                        |
+|RÉPUTATION : 67.36                                                                       |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 121 05:27:48                                                |
+|                                                                                         |
+|VAISSEAU        : FS-CR-LQ                                                               |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 7 241.74                                                             |
+|MASSE           : 3.936 t                                                                |
+|RPP             : 2.7                                                                    |
+|Nombre d'étages : 2                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    :  m                                                               |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:01 : Décollage                                                                  |
+·_________________________________________________________________________________________·
+|                       ~ EXPÉRIENCES ATMOSPHÉRIQUES ET SPATIALES ~                       |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 22 724.110000000001                                                       |
+|SCIENCE    : 3.94                                                                        |
+|RÉPUTATION : 67.36                                                                       |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 121 05:27:34                                                |
+|                                                                                         |
+|VAISSEAU        : FS-CR-LQ                                                               |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 6 911.74                                                             |
+|MASSE           : 3.936 t                                                                |
+|RPP             : 2.7                                                                    |
+|Nombre d'étages : 3                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    :  m                                                               |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:01 : Décollage                                                                  |
+·_________________________________________________________________________________________·
+|                       ~ EXPÉRIENCES ATMOSPHÉRIQUES ET SPATIALES ~                       |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 22 095.4199999999983                                                      |
+|SCIENCE    : 3.94                                                                        |
+|RÉPUTATION : 67.36                                                                       |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 121 05:27:30                                                |
+|                                                                                         |
+|VAISSEAU        : FS-CR-LQ                                                               |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 6 911.74                                                             |
+|MASSE           : 3.936 t                                                                |
+|RPP             : 2.7                                                                    |
+|Nombre d'étages : 3                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    :  m                                                               |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:01 : Décollage                                                                  |
+·_________________________________________________________________________________________·
+|                       ~ EXPÉRIENCES ATMOSPHÉRIQUES ET SPATIALES ~                       |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 21 558.169999999998                                                       |
+|SCIENCE    : 3.94                                                                        |
+|RÉPUTATION : 67.36                                                                       |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 121 05:27:33                                                |
+|                                                                                         |
+|VAISSEAU        : FS-CR-LQ                                                               |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 6 856.74                                                             |
+|MASSE           : 3.941 t                                                                |
+|RPP             : 2.7                                                                    |
+|Nombre d'étages : 3                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    :  m                                                               |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:01 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:47 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 6.18                                                        |
+|  · ALTITUDE               : 14 468.83 m                                                 |
+|  · VITESSE SURFACE        : 582.02 m/s                                                  |
+|  · VITESSE ORBITALE       : 711.51 m/s                                                  |
+|  · PRESSION ATMOSPHÉRIQUE : 0.226 ATM / 22.934 kPA                                      |
+|                                                                                         |
+|T+ 00:00:57 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 3.7                                                         |
+|  · ALTITUDE               : 20 089.5900000000001 m                                      |
+|  · VITESSE SURFACE        : 693.62 m/s                                                  |
+|  · VITESSE ORBITALE       : 760.72 m/s                                                  |
+|  · PRESSION ATMOSPHÉRIQUE : 0.105 ATM / 10.616 kPA                                      |
+·_________________________________________________________________________________________·
+|                       ~ EXPÉRIENCES ATMOSPHÉRIQUES ET SPATIALES ~                       |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 20 920.919999999998                                                       |
+|SCIENCE    : 3.94                                                                        |
+|RÉPUTATION : 67.36                                                                       |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 121 05:27:29                                                |
+|                                                                                         |
+|VAISSEAU        : FS-CR-LQ                                                               |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 6 856.74                                                             |
+|MASSE           : 3.941 t                                                                |
+|RPP             : 2.7                                                                    |
+|Nombre d'étages : 3                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    :  m                                                               |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:01 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:47 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 6.2                                                         |
+|  · ALTITUDE               : 15 924.280000000001 m                                       |
+|  · VITESSE SURFACE        : 709.72 m/s                                                  |
+|  · VITESSE ORBITALE       : 747.74 m/s                                                  |
+|  · PRESSION ATMOSPHÉRIQUE : 0.251 ATM / 25.422 kPA                                      |
+|                                                                                         |
+|T+ 00:00:57 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 3.72                                                        |
+|  · ALTITUDE               : 23 296.450000000001 m                                       |
+|  · VITESSE SURFACE        : 895.28 m/s                                                  |
+|  · VITESSE ORBITALE       : 925.54 m/s                                                  |
+|  · PRESSION ATMOSPHÉRIQUE : 0.092 ATM / 9.349 kPA                                       |

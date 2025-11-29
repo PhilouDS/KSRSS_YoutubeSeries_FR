@@ -3,30 +3,46 @@ rcs on.
 sas off.
 wait 0.
 
-if exists("lib:/KSRSS_log") {
-  runOncePath("lib:/KSRSS_log").
-} else {
+
+list processors in proc.
+local idx is 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_log") {
+    runOncePath("lib" + idx + ":/KSRSS_log").
+    break.
+  } else {set idx to idx + 1.}
+}
+if idx = proc:length {
   runOncePath("main:/KSRSS_log").
 }
-wait 0.
-
-if exists("lib:/KSRSS_Manoeuvre") {
-  runOncePath("lib:/KSRSS_Manoeuvre").
-} else {
-  runOncePath("main:/KSRSS_Manoeuvre"). 
+set idx to 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_Outils") {
+    runOncePath("lib" + idx + ":/KSRSS_Outils").
+    break.
+  } else {set idx to idx + 1.}
 }
-wait 0.
-
-if exists("lib:/KSRSS_Outils") {
-  runOncePath("lib:/KSRSS_Outils").
-} else {
+if idx >= proc:length {
   runOncePath("main:/KSRSS_Outils").
 }
-wait 0.
-
-if exists("lib:/KSRSS_Stats") {
-  runOncePath("lib:/KSRSS_Stats").
-} else {
+set idx to 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_Manoeuvre") {
+    runOncePath("lib" + idx + ":/KSRSS_Manoeuvre").
+    break.
+  } else {set idx to idx + 1.}
+}
+if idx = proc:length {
+  runOncePath("main:/KSRSS_Manoeuvre").
+}
+set idx to 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_Stats") {
+    runOncePath("lib" + idx + ":/KSRSS_Stats").
+    break.
+  } else {set idx to idx + 1.}
+}
+if idx >= proc:length {
   runOncePath("main:/KSRSS_Stats").
 }
 wait 0.
@@ -47,7 +63,7 @@ if hasNode {
   local burnTime is computeBurningTime(theNextNode:deltav:mag, stage:number).
   wait 0.
   if burnTime < 10 {
-    thrustLimiter(burnTime * 100 / 10).
+    thrustLimiter(burnTime * 100 / 10, false).
     wait 0.
     set burnTime to computeBurningTime(theNextNode:deltav:mag, stage:number).
     wait 0.
@@ -57,14 +73,14 @@ if hasNode {
   
   wait 0.1.
   if stage:number <> tempStageNumber {
-    thrustLimiter(100).
+    thrustLimiter(100, false).
     wait 0.
     set burnTime to computeBurningTime(theNextNode:deltav:mag, stage:number).
     wait 0.
     if burnTime < minBurnTime {
       local perc is max(burnTime * 100 / minBurnTime, 0.5).
       wait 0.
-      thrustLimiter(perc).
+      thrustLimiter(perc, false).
       wait 0.
       set burnTime to computeBurningTime(theNextNode:deltav:mag, stage:number).
       wait 0.
@@ -113,7 +129,7 @@ else {
   print("Pas de noeud de manoeuvre existant.").
 }
 
-thrustLimiter(100).
+thrustLimiter(100, false).
 clearScreen.
 
 

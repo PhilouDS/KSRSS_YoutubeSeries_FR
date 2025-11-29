@@ -1,10 +1,24 @@
-if exists("lib:/KSRSS_log") {
-  runOncePath("lib:/KSRSS_log").
-} else {runOncePath("main:/KSRSS_log").}
-
-if exists("lib:/KSRSS_Outils") {
-  runOncePath("lib:/KSRSS_Outils").
-} else {runOncePath("main:/KSRSS_Outils").}
+list processors in proc.
+local idx is 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_log") {
+    runOncePath("lib" + idx + ":/KSRSS_log").
+    break.
+  } else {set idx to idx + 1.}
+}
+if idx = proc:length {
+  runOncePath("main:/KSRSS_log").
+}
+set idx to 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_Outils") {
+    runOncePath("lib" + idx + ":/KSRSS_Outils").
+    break.
+  } else {set idx to idx + 1.}
+}
+if idx >= proc:length {
+  runOncePath("main:/KSRSS_Outils").
+}
 
 // Earth caracteristics
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾

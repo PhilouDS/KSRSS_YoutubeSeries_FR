@@ -1,6 +1,6 @@
 wait until homeConnection:isconnected.
 clearscreen.
-set terminal:width to 45.
+set terminal:width to 60.
 set terminal:height to 30.
 core:part:getModule("kosProcessor"):doEvent("open terminal").
 
@@ -16,11 +16,20 @@ else {
 clearScreen.
 
 wait until ship:unpacked.
-wait until kuniverse:canquicksave.
-kuniverse:quicksave().
-wait 0.
+local save_chrono is time:seconds.
+until kuniverse:canquicksave {
+  if (time:seconds - save_chrono > 5) {break.}
+  print "En attente de la sauvegarde" at (0, 3).
+  wait 0.5.
+  print "                           " at (0,3).
+  wait 0.5.
+}
+if (kUniverse:canquicksave) {
+  kuniverse:quicksave().
+  wait 0.
+  print "Sauvegarde rapide effectuée".
+} else {print "Simulation ! Sauvegarde impossible !".}
 
-print "Sauvegarde rapide effectuée".
 wait 0.
 
 set config:suppressAutoPilot to false.
@@ -44,27 +53,44 @@ for f in missionList {
 set core:volume:name to "main".
 list processors in proc.
 
+set idx to 1.
+
 for p in proc {
   if p:volume:name <> "main" {
-    set p:volume:name to "lib".
+    set p:volume:name to "lib" + idx.
+    set idx to idx + 1.
   }
 }
 
 cd(ksmFolder).
 
+set idx to 1.
 list files in fileList.
 for f in fileList {
   if not(f:name = "KSRSS_En-vol.ksm" OR f:name = "KSRSS_Lancement.ksm") {
-    set theLib to ksmFolder + f:name.
-    if (f:size < volume("lib"):freespace) {
-      copypath(theLib, "lib:/" + f:name).
-      print ("Bibliothèque " + f:name + " copiée sur disque 'lib'.").
+    if proc:length > 1 {
+      set theLib to ksmFolder + f:name.
+      set vol to "lib" + idx.
+      if (f:size < volume(vol):freespace) {
+        copypath(theLib, vol + ":/" + f:name).
+        print ("Bibliothèque " + f:name + " copiée sur disque '" + vol + "'.").
+      } else {
+        if proc:length > 2 {
+          set vol to "lib" + (idx+1).
+          copypath(theLib, vol + ":/" + f:name).
+          print ("Bibliothèque " + f:name + " copiée sur disque '" + vol + "'.").
+          set idx to idx + 1.
+        } else {
+          copypath(theLib, "main:/" + f:name).
+          print ("Bibliothèque " + f:name + " copiée sur disque 'main'.").
+        }
+      }
     } else {
       copypath(theLib, "main:/" + f:name).
       print ("Bibliothèque " + f:name + " copiée sur disque 'main'.").
     }
-    wait 0.1.
   }
+  wait 0.1.
 }
 
 print (" ").
@@ -78,6 +104,13 @@ wait 0.1.
 print " ".
 
 wait 0.5.
+
+compile(missionFolder + "00_mnv.ks").
+wait 0.
+copypath(missionFolder + "00_mnv.ksm", "main:/" + "mnv.ksm").
+wait 0.
+print "Programme de manoeuvre autonome chargé".
+wait 0.
 
 compile(missionFolder + mission_name + ".ks").
 print "Mission compilée".

@@ -1,7 +1,14 @@
-//runOncePath("0:/KSRSS_LIB/KSRSS_log.ks").
-if exists("lib:/KSRSS_log") {
-  runOncePath("lib:/KSRSS_log").
-} else {runOncePath("main:/KSRSS_log").}
+list processors in proc.
+local idx is 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_log") {
+    runOncePath("lib" + idx + ":/KSRSS_log").
+    break.
+  } else { set idx to idx + 1.}
+}
+if idx = proc:length {
+  runOncePath("main:/KSRSS_log").
+}
 
 //_________________________________________________
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -11,7 +18,7 @@ if exists("lib:/KSRSS_log") {
 
 global function openTerminal {
   parameter theHeight is 30.
-  parameter theWidth is 45.
+  parameter theWidth is 55.
   set terminal:width to theWidth.
   set terminal:height to theHeight.
   clearScreen.
@@ -59,27 +66,45 @@ global function endProgram {
   parameter maxAltitude is -1.
   parameter recover is 1.
   parameter transmit_log is false.
+  parameter transmit_name is ship:name.
   clearScreen.
   print "FERMETURE DU PROGRAMME.".
   wait 1.
   logFinMission(maxAltitude).
   closeTerminal().
-  sas on.
   unlock steering.
+  wait 0.  
+  set ship:control:neutralize to true.
   set ship:control:pilotmainthrottle to 0.
   if transmit_log {
+    if exists("main:/" + transmit_name + ".txt") {
+      wait until homeConnection:isconnected.
+      wait 0.
+      copyPath("main:/" + transmit_name + ".txt", "0:/KSRSS_LOGS/" + transmit_name + "_transmited.txt").
+      wait 0.
+    }
     if exists("main:/" + ship:name + ".txt") {
       wait until homeConnection:isconnected.
       wait 0.
       copyPath("main:/" + ship:name + ".txt", "0:/KSRSS_LOGS/" + ship:name + "_transmited.txt").
       wait 0.
-      print "Transmission du log de mission".
     }
+    print "Transmission du log de mission".
   }
   if recover = 1 {
-      wait until addons:career:isRecoverable(ship).
-      wait until addons:career:Recovervessel(ship).
+    wait until addons:career:isRecoverable(ship).
+    wait until addons:career:Recovervessel(ship).
+  }
+  wait 0.
+  sas on.
+  list processors in proc.
+  for p in proc {
+    if p:volume:name <> "main" {
+      p:deactivate().
+      wait 0.
     }
+  }
+  shutdown.
 }
 
 //_________________________________________________
@@ -94,6 +119,7 @@ global function listOfEngines {
 }
 
 global function calculTWR {
+  parameter twrAltitude is ship:altitude.
   //--- masse totale :
   set totalMass to ship:mass.
   local stageClamp is 1.
@@ -117,17 +143,23 @@ global function calculTWR {
     set wantedThrust to wantedThrust + en:possibleThrust.
   }
 
-  set g_here to body:mu / ((body:radius + ship:altitude)^2).
-  return wantedThrust / (totalMass*g_here).
+  set grav_here to g_here(twrAltitude).
+  return wantedThrust / (totalMass*grav_here).
 }
 
 global function thrustLimiter {
   parameter pourcentage.
+  parameter printPerc is true.
   local engList is listOfEngines().
   for eng in engList {
     set eng:thrustLimit to pourcentage.
-    print eng:name + " : " + eng:thrustLimit.
+    if printPerc {print eng:name + " : " + eng:thrustLimit.}
   }
+}
+
+global function g_here {
+  parameter choosenAlt is ship:altitude.
+  return body:mu / ((body:radius + choosenAlt)^2).
 }
 
 //_________________________________________________

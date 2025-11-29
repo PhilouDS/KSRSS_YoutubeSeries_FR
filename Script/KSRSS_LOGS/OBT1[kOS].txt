@@ -1,0 +1,87 @@
+·_________________________________________________________________________________________·
+|                             ~ MISE EN ORBITE AUTOMATISÉE ~                              |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 3594.44                                                                   |
+|SCIENCE    : ☆ 3.92                                                                      |
+|RÉPUTATION : ☺ 98.01                                                                     |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 1 Day 274 07:39:29                                                |
+|                                                                                         |
+|VAISSEAU        : OBT1[kOS]                                                              |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 6842                                                                 |
+|MASSE           : 7.842 t                                                                |
+|RPP             : 1.33                                                                   |
+|Nombre d'étages : 7                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    : 120000 m                                                         |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:00 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:17 : Début du Gravity Turn                                                      |
+|  · Vitesse initiale : 68.5 m/s.                                                         |
+|  · Angle initial    : 85°                                                               |
+|                                                                                         |
+|T+ 00:00:24 : Suivi du prograde : 98.7 m/s.                                              |
+|                                                                                         |
+|T+ 00:00:59 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 2.67                                                        |
+|  · ALTITUDE               : 7581.52 m                                                   |
+|  · VITESSE SURFACE        : 286.01 m/s                                                  |
+|  · VITESSE ORBITALE       : 447.49 m/s                                                  |
+|  · PRESSION ATMOSPHÉRIQUE : 0.187 ATM / 18.92 kPA                                       |
+|                                                                                         |
+|T+ 00:01:34 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 2.65                                                        |
+|  · ALTITUDE               : 21437.73 m                                                  |
+|  · VITESSE SURFACE        : 900.33 m/s                                                  |
+|  · VITESSE ORBITALE       : 1095.37 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.135 ATM / 13.701 kPA                                      |
+|                                                                                         |
+|T+ 00:02:21 : Fin du Gravity Turn                                                        |
+|                                                                                         |
+|T+ 00:02:54 : Espace atteint                                                             |
+|                                                                                         |
+|T+ 00:02:56 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 2095.69 m/s.                                                      |
+|  · Vitesse finale   : 3814.08 m/s.                                                      |
+|  · Delta-V          : 1718.39 m/s.                                                      |
+|                                                                                         |
+|T+ 00:02:59 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 121.23 s.                                                    |
+|  · Temps avant manoeuvre : 00:00:49 s.                                                  |
+|                                                                                         |
+|T+ 00:03:49 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 00:03:55 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.13                                                        |
+|  · ALTITUDE               : 110315.76 m                                                 |
+|  · VITESSE SURFACE        : 2187.69 m/s                                                 |
+|  · VITESSE ORBITALE       : 2433.54 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0 ATM / 0 kPA                                               |
+|                                                                                         |
+|T+ 00:05:51 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 00:05:52 : Vitesse actuelle : 3812.47 m/s                                             |
+|                                                                                         |
+|# INFORMATIONS DE L'ORBITE                                                               |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|Apogée                       : 121578.47 m                                               |
+|Périgée                      : 105456.05 m                                               |
+|Argument du périgée          : 352.11°                                                   |
+|Excentricité                 : 47.24 x 10^(-4)                                           |
+|Période orbitale             : 00:46:45                                                  |
+|Inclinaison                  : 5.096°                                                    |
+|Longitude du noeud ascendant : 98.8°                                                     |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |

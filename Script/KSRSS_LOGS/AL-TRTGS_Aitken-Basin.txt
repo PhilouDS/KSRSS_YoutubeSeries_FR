@@ -1,0 +1,145 @@
+·_________________________________________________________________________________________·
+|                                ~ ALUNISSAGE - AL-TRTGS ~                                |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|FENÊTRE DE LANCEMENT    : 62, 02:08:08                                                   |
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 88721.63                                                                  |
+|SCIENCE    : ☆ 269.37                                                                    |
+|RÉPUTATION : ☺ 361.63                                                                    |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 3 Day 62 02:08:10                                                 |
+|                                                                                         |
+|VAISSEAU        : AL-TRTGS                                                               |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT                 : √ 39550.35                                                        |
+|HAUTEUR              : 25.91 m                                                           |
+|MASSE                : 70.38 t                                                           |
+|RPP                  : 1.23                                                              |
+|Nombre d'étages      : 9                                                                 |
+|Nombre de composants : 67                                                                |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    : 100000 m                                                         |
+|INCLINAISON SOUHAITÉE : 28.3626779079849°                                                |
+|AZIMUT DE LANCEMENT   : 119.648°                                                         |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|# DONNÉES SUPPLÉMENTAIRES                                                                |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|NOEUD DE LANCEMENT    : Noeud descendant                                                 |
+|                                                                                         |
+|                                                                                         |
+|T+ 00:00:00 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:15 : Début du Gravity Turn                                                      |
+|  · Vitesse initiale : 49.1 m/s.                                                         |
+|  · Angle initial    : 85°                                                               |
+|                                                                                         |
+|T+ 00:00:23 : Suivi du prograde : 77.6 m/s.                                              |
+|                                                                                         |
+|T+ 00:01:58 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.24                                                        |
+|  · ALTITUDE               : 33705.28 m                                                  |
+|  · VITESSE SURFACE        : 1558.39 m/s                                                 |
+|  · VITESSE ORBITALE       : 1752.17 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.042 ATM / 4.266 kPA                                       |
+|                                                                                         |
+|T+ 00:02:54 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 2.05                                                        |
+|  · ALTITUDE               : 63452.84 m                                                  |
+|  · VITESSE SURFACE        : 2120.41 m/s                                                 |
+|  · VITESSE ORBITALE       : 2327.91 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.001 ATM / 0.07 kPA                                        |
+|                                                                                         |
+|T+ 00:03:29 : Fin du Gravity Turn                                                        |
+|                                                                                         |
+|T+ 00:03:34 : Espace atteint                                                             |
+|                                                                                         |
+|T+ 00:03:36 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 2951.53 m/s.                                                      |
+|  · Vitesse finale   : 3836.25 m/s.                                                      |
+|  · Delta-V          : 884.72 m/s.                                                       |
+|                                                                                         |
+|T+ 00:03:45 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 32.72 s.                                                     |
+|  · Temps avant manoeuvre : 00:01:18 s.                                                  |
+|                                                                                         |
+|T+ 00:05:04 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 00:05:43 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 00:05:44 : Vitesse actuelle : 3836.37 m/s                                             |
+|                                                                                         |
+|# INFORMATIONS DE L'ORBITE                                                               |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|Apogée                       : 100979.28 m                                               |
+|Périgée                      : 99109.51 m                                                |
+|Argument du périgée          : 278.39°                                                   |
+|Excentricité                 : 5.52 x 10^(-4)                                            |
+|Période orbitale             : 00:46:12                                                  |
+|Inclinaison                  : 27.821°                                                   |
+|Longitude du noeud ascendant : 3.17°                                                     |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:22:57 : Nouvelle inclinaison relative avec BODY("Moon") : 0.1385°                  |
+|                                                                                         |
+|T+ 00:22:59 : Début du ciblage pour le transfert vers Moon                               |
+|                                                                                         |
+|T+ 00:39:09 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 3827.52 m/s.                                                      |
+|  · Vitesse finale   : 5368.44 m/s.                                                      |
+|  · Delta-V          : 1540.92 m/s.                                                      |
+|                                                                                         |
+|T+ 00:39:48 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 75.53 s.                                                     |
+|  · Temps avant manoeuvre : 00:01:03 s.                                                  |
+|                                                                                         |
+|T+ 00:40:51 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 00:41:10 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.91                                                        |
+|  · ALTITUDE               : 104726.07 m                                                 |
+|  · VITESSE SURFACE        : 4236.83 m/s                                                 |
+|  · VITESSE ORBITALE       : 4454.69 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0 ATM / 0 kPA                                               |
+|                                                                                         |
+|T+ 00:42:05 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 00:42:05 : Vitesse actuelle : 5357.6 m/s                                              |
+|                                                                                         |
+|T+ 00:42:08 : Fin de la manoeuvre de transfert vers BODY("Moon")                         |
+|                                                                                         |
+|T+ 00:42:24 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : 01:59:41 s.                                                  |
+|                                                                                         |
+|T+ 4j.02:36:47 : La sonde a atteint la sphère d'influence de la Lune.                    |
+|                                                                                         |
+|T+ 4j.02:37:10 : Enregistrement de la manoeuvre                                          |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : 00:08:02 s.                                                  |
+|                                                                                         |
+|T+ 4j.02:45:13 : Allumage des moteurs : début de la manoeuvre.                           |
+|                                                                                         |
+|T+ 4j.02:45:23 : Coupure des moteurs : fin de la manoeuvre                               |
+|                                                                                         |
+|T+ 4j.02:45:24 : Vitesse actuelle : 406.8 m/s                                            |
+|                                                                                         |
+|T+ 4j.02:45:25 : Calcul d'un transfert de Hohmann                                        |
+|  · Vitesse initiale : 1228.59 m/s.                                                      |
+|  · Vitesse finale   : 831.11 m/s.                                                       |
+|  · Delta-V          : -397.48 m/s.                                                      |
+|                                                                                         |
+|T+ 4j.02:45:33 : Enregistrement de la manoeuvre                                          |
+|  · Durée de la manoeuvre : 16.35 s.                                                     |
+|  · Temps avant manoeuvre : 09:34:55 s.                                                  |
+
+SCRIPT INTERROMPU MANUELLEMENT

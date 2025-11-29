@@ -1,0 +1,94 @@
+·_________________________________________________________________________________________·
+|                                   ~ ORBITE LUNAIRE ~                                    |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|FENÊTRE DE LANCEMENT    : 65, 08:40:40                                                   |
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 47686.05                                                                  |
+|SCIENCE    : ☆ 55.5                                                                      |
+|RÉPUTATION : ☺ 344.77                                                                    |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 2 Day 65 08:40:43                                                 |
+|                                                                                         |
+|VAISSEAU        : OBT-LUNE-I                                                             |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 15943                                                                |
+|MASSE           : 23.147 t                                                               |
+|RPP             : 1.35                                                                   |
+|Nombre d'étages : 6                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    : 120000 m                                                         |
+|INCLINAISON SOUHAITÉE : 28.3626779079849°                                                |
+|AZIMUT DE LANCEMENT   : 60.342°                                                          |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|# DONNÉES SUPPLÉMENTAIRES                                                                |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|NOEUD DE LANCEMENT    : Noeud ascendant                                                  |
+|                                                                                         |
+|                                                                                         |
+|T+ 00:00:00 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:13 : Début du Gravity Turn                                                      |
+|  · Vitesse initiale : 56.3 m/s.                                                         |
+|  · Angle initial    : 85°                                                               |
+|                                                                                         |
+|T+ 00:00:21 : Suivi du prograde : 92.7 m/s.                                              |
+|                                                                                         |
+|T+ 00:01:37 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.98                                                        |
+|  · ALTITUDE               : 24589.81 m                                                  |
+|  · VITESSE SURFACE        : 894.03 m/s                                                  |
+|  · VITESSE ORBITALE       : 1064.91 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.072 ATM / 7.282 kPA                                       |
+|                                                                                         |
+|T+ 00:02:19 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.27                                                        |
+|  · ALTITUDE               : 50921.52 m                                                  |
+|  · VITESSE SURFACE        : 1556.23 m/s                                                 |
+|  · VITESSE ORBITALE       : 1748.78 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0.003 ATM / 0.311 kPA                                       |
+|                                                                                         |
+|T+ 00:03:37 : Fin du Gravity Turn                                                        |
+|                                                                                         |
+|T+ 00:03:38 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 2559.7 m/s.                                                       |
+|  · Vitesse finale   : 3813.81 m/s.                                                      |
+|  · Delta-V          : 1254.11 m/s.                                                      |
+|                                                                                         |
+|T+ 00:03:44 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 59.86 s.                                                     |
+|  · Temps avant manoeuvre : 00:01:05 s.                                                  |
+|                                                                                         |
+|T+ 00:04:49 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 00:05:56 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 00:05:56 : Vitesse actuelle : 3814.4 m/s                                              |
+|                                                                                         |
+|# INFORMATIONS DE L'ORBITE                                                               |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|Apogée                       : 123328.43 m                                               |
+|Périgée                      : 116954.72 m                                               |
+|Argument du périgée          : 116.33°                                                   |
+|Excentricité                 : 18.61 x 10^(-4)                                           |
+|Période orbitale             : 00:47:02                                                  |
+|Inclinaison                  : 27.895°                                                   |
+|Longitude du noeud ascendant : 2.85°                                                     |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:49:51 : Fin de la manoeuvre de transfert vers BODY("Moon")                         |
+|                                                                                         |
+|T+ 4j.03:42:54 : La sonde a atteint la sphère d'influence de la Lune.                    |
+|                                                                                         |
+|T+ 4j.03:47:41 : Enregistrement de la manoeuvre                                          |
+|  · Durée de la manoeuvre : 22.34 s.                                                     |
+|  · Temps avant manoeuvre : 09:40:07 s.                                                  |

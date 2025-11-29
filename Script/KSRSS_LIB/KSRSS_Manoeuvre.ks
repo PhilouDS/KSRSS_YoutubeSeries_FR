@@ -1,17 +1,34 @@
-// runOncePath("0:/KSRSS_LIB/KSRSS_log.ks").
-// runOncePath("0:/KSRSS_LIB/KSRSS_Outils.ks").
-// runOncePath("0:/KSRSS_LIB/KSRSS_Stats.ks").
-if exists("lib:/KSRSS_log") {
-  runOncePath("lib:/KSRSS_log").
-} else {runOncePath("main:/KSRSS_log").}
-
-if exists("lib:/KSRSS_Outils") {
-  runOncePath("lib:/KSRSS_Outils").
-} else {runOncePath("main:/KSRSS_Outils").}
-
-if exists("lib:/KSRSS_Stats") {
-  runOncePath("lib:/KSRSS_Stats").
-} else {runOncePath("main:/KSRSS_Stats").}
+list processors in proc.
+local idx is 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_log") {
+    runOncePath("lib" + idx + ":/KSRSS_log").
+    break.
+  } else { set idx to idx + 1.}
+}
+if idx = proc:length {
+  runOncePath("main:/KSRSS_log").
+}
+set idx to 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_Outils") {
+    runOncePath("lib" + idx + ":/KSRSS_Outils").
+    break.
+  } else { set idx to idx + 1.}
+}
+if idx = proc:length {
+  runOncePath("main:/KSRSS_Outils").
+}
+set idx to 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_Stats") {
+    runOncePath("lib" + idx + ":/KSRSS_Stats").
+    break.
+  } else { set idx to idx + 1.}
+}
+if idx = proc:length {
+  runOncePath("main:/KSRSS_Stats").
+}
 
 //_________________________________________________
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -91,7 +108,7 @@ global function exeMnv{
     local tempStageNumber is stage:number.
     local burnTime is computeBurningTime(theNextNode:deltav:mag, stage:number).
     if burnTime < minBurnTime {
-      thrustLimiter(burnTime * 100 / minBurnTime).
+      thrustLimiter(burnTime * 100 / minBurnTime, false).
       set burnTime to computeBurningTime(theNextNode:deltav:mag, stage:number).
     }
     
@@ -99,11 +116,11 @@ global function exeMnv{
 
     wait 0.1.
     if stage:number <> tempStageNumber {
-      thrustLimiter(100).
+      thrustLimiter(100, false).
       set burnTime to computeBurningTime(theNextNode:deltav:mag, stage:number).
       if burnTime < minBurnTime {
         local perc is max(burnTime * 100 / minBurnTime, 0.5).
-        thrustLimiter(perc).
+        thrustLimiter(perc, false).
         set burnTime to computeBurningTime(theNextNode:deltav:mag, stage:number).
       }
       logNode(round(burnTime, 2), round(theNextNode:ETA - burnTime/2, 2), 1).
@@ -163,7 +180,7 @@ global function exeMnv{
     print("Pas de noeud de manoeuvre existant.").
   }
   lock steering to prograde.
-  thrustLimiter(100).
+  thrustLimiter(100, false).
   logFlightEvent("Coupure des moteurs : fin de la manoeuvre").
   logFlightEvent("Vitesse actuelle : " + grandNombre(round(ship:velocity:orbit:mag,2),2) + " m/s").
 }
@@ -216,100 +233,50 @@ function circularization {
 }
 
 
-
 //_________________________________________________
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-// TRANSFERT VERS UN SATELLITE NATUREL
+// MODIFIER L'INCLINAISON DE L'ORBITE ACTUELLE
 //_________________________________________________
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-global function transfert {
-  parameter theTarget, thePeriapsis.
-  set target to theTarget.
-  clearScreen.
-  logFlightEvent("Début du ciblage pour le transfert vers " + theTarget:name).
 
-  local targetAngle is 180 - computeTargetAngle(target).
-  lock phaseAngle to computePhaseAngle(target).
-  
-  until abs(targetAngle - phaseAngle) < 25 {
-    set warp to 4.
-    print ("Angle cible : ") + round(targetAngle, 2) + ("°    ") at (0,8).
-    print ("Angle phase : ") + round(phaseAngle, 2) + ("°    ") at (0,9).
-    wait 0.1.
+global function correctionAbsoluteInclination{
+  parameter targetInc.
+  parameter deltaInc is 0.1.
+  parameter loc is "AN".
+
+  local theAngleNode is ship:orbit:LAN.
+  local aVector is theNormalVector("anti").
+
+  if loc = "DN" {
+    local LDN is 180 + ship:orbit:LAN.
+    set LDN to LDN - 360*floor(LDN / 360).
+    set theAngleNode to LDN.
+    set aVector to theNormalVector().
   }
+
+  lock steering to aVector.
+  alignFacing(aVector,1).
+  wait 1.
+  set warp to 4.
+
+  wait until vernalAngle() < theAngleNode - 2 and vernalAngle() > theAngleNode - 5.
+  set warp to 2.
+  wait until abs(vernalAngle() - theAngleNode) <= 0.5.
   set warp to 0.
   wait until kuniverse:timewarp:rate = 1.
-
-  local deltaAngle is abs(targetAngle - phaseAngle).
-  local deltaTime is deltaAngle * ship:orbit:period / 360.
-
-  local deltaV is HohmannTransfert(ship:altitude, theTarget:orbit:apoapsis - theTarget:radius - 2*thePeriapsis).
-  local transferNode is node(time:seconds + deltaTime, 0, 0, deltaV).
-  add transferNode.
-
-  local reachNextPath is false.
-  when transferNode:orbit:hasnextpatch then {
-    set reachNextPath to true.
+  alignFacing(aVector,1).
+  lock throttle to 0.5.
+  until abs(ship:orbit:inclination - targetInc) <= deltaInc {
+    set deltaInc to abs(ship:orbit:inclination - targetInc).
+    print "Inclinaison actuelle : " + round(deltaInc, 3) + "°            " at (0,terminal:height - 3).
+    wait 0.1.
   }
-
-  if reachNextPath = true and transferNode:orbit:hasnextpatch = false {
-    local changePrograde is -0.2.
-    until transferNode:orbit:hasnextpatch {
-      set transferNode:prograde to transferNode:prograde - changePrograde.
-    }
-  }
-  wait 0.1.
-  
-  exeMnv().
-  wait 0.1.
-
-  if ship:orbit:hasnextpatch = false {
-    lock steering to retrograde.
-    alignFacing(retrograde:vector).
-    thrustLimiter(5).
-    lock throttle to 0.1.
-    wait until ship:orbit:hasnextpatch.
-    lock throttle to 0.
-  }
-
-  lock steering to prograde.
-  alignFacing(prograde:vector).
-
-  thrustLimiter(100).
-  wait 1.
-  logFlightEvent("Fin de la manoeuvre de transfert vers " + theTarget).
+  lock throttle to 0.
+  wait 0.5.
+  print "Nouvelle inclinaison : " + round(ship:orbit:inclination, 3) + "°".
+  logFlightEvent("Inclinaison de l'orbite corrigée : " + round(ship:orbit:inclination, 3) + "°").
+  wait 0.5.
 }
-
-function computeTargetAngle { // /!\ assuming circular orbit
-  parameter theTarget.
-  local futurPe is choose
-    ship:apoapsis if ship:apoapsis < theTarget:orbit:apoapsis
-    else theTarget:orbit:apoapsis.
-  set futurPe to futurPe + body:radius.
-
-  local futurAp is choose
-    theTarget:orbit:apoapsis if ship:apoapsis < theTarget:apoapsis
-    else ship:apoapsis.
-  set futurAp to futurAp + body:radius.
-
-  local semiMajorAxis is (futurPe + futurAp) / 2.
-  local semiPeriod is constant:pi * sqrt(semiMajorAxis^3 / body:mu).
-  local targetPeriod is theTarget:orbit:period.
-  return semiPeriod * 360 / targetPeriod.
-}
-
-function computePhaseAngle {
-  parameter theTarget.
-
-  local angleShip is vernalAngle().
-  local targetAngle is vernalAngle(theTarget).
-
-  local diffAngle is targetAngle - angleShip.
-  return diffAngle - 360 * floor(diffAngle/360).
-}
-
-
-
 
 //_________________________________________________
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -317,7 +284,7 @@ function computePhaseAngle {
 //_________________________________________________
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 
-function correctionRelativeInclination{
+global function correctionRelativeInclination{
   parameter theTarget, deltaAngleNode.
   parameter targetInclination is 0.1.
   clearScreen.
@@ -345,54 +312,6 @@ function correctionRelativeInclination{
   wait 0.5.
   print "New relative inclination: " + round(vAng(theNormalVector(), theNormalVector("normal", theTarget)),4) + "°".
   logFlightEvent("Nouvelle inclinaison relative avec " + target + " : " + round(vAng(theNormalVector(), theNormalVector("normal", theTarget)),4) + "°").
-  wait 0.5.
-}
-
-
-
-//_________________________________________________
-//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-// MODIFIER L'INCLINAISON DE L'ORBITE ACTUELLE
-//_________________________________________________
-//‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-
-function correctionAbsoluteInclination{
-  parameter targetInc.
-  parameter loc is "AN".
-
-  local theAngleNode is ship:orbit:LAN.
-  local aVector is theNormalVector("anti").
-  local deltaInc is 1_000.
-
-  if loc = "DN" {
-    local LDN is 180 + ship:orbit:LAN.
-    set LDN to LDN - 360*floor(LDN / 360).
-    set theAngleNode to LDN.
-    set aVector to theNormalVector().
-  }
-
-  lock steering to aVector.
-  alignFacing(aVector,1).
-  wait 1.
-  set warp to 4.
-
-  wait until vernalAngle() < theAngleNode - 2 and vernalAngle() > theAngleNode - 5.
-  set warp to 2.
-  wait until abs(vernalAngle() - theAngleNode) <= 0.5.
-  set warp to 0.
-  wait until kuniverse:timewarp:rate = 1.
-  alignFacing(aVector,1).
-  lock throttle to 0.5.
-  until abs(ship:orbit:inclination - targetInc) > deltaInc {
-    set deltaInc to abs(ship:orbit:inclination - targetInc).
-    print deltaInc at (0,terminal:height - 3).
-    print abs(ship:orbit:inclination - targetInc) at (0,terminal:height - 2).
-    wait 0.1.
-  }
-  lock throttle to 0.
-  wait 0.5.
-  print "New inclination: " + round(ship:orbit:inclination, 3) + "°".
-  logFlightEvent("Inclinaison de l'orbite corrigée : " + round(ship:orbit:inclination, 3) + "°").
   wait 0.5.
 }
 

@@ -1,0 +1,83 @@
+·_________________________________________________________________________________________·
+|                               ~ LANCEMENT VERS LA LUNE ~                                |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|FENÊTRE DE LANCEMENT    : 179, 10:17:37                                                  |
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 171279.78                                                                 |
+|SCIENCE    : ☆ 17.64                                                                     |
+|RÉPUTATION : ☺ 214.74                                                                    |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 2 Day 179 10:17:40                                                |
+|                                                                                         |
+|VAISSEAU        : SB-Lune                                                                |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT            : √ 22387                                                                |
+|MASSE           : 33.025 t                                                               |
+|RPP             : 1.34                                                                   |
+|Nombre d'étages : 6                                                                      |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    : 120000 m                                                         |
+|INCLINAISON SOUHAITÉE : 28.3626779079849°                                                |
+|AZIMUT DE LANCEMENT   : 119.658°                                                         |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|# DONNÉES SUPPLÉMENTAIRES                                                                |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|NOEUD DE LANCEMENT    : Noeud descendant                                                 |
+|                                                                                         |
+|                                                                                         |
+|T+ 00:00:00 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:13 : Début du Gravity Turn                                                      |
+|  · Vitesse initiale : 56.3 m/s.                                                         |
+|  · Angle initial    : 85°                                                               |
+|                                                                                         |
+|T+ 00:00:22 : Suivi du prograde : 98.2 m/s.                                              |
+|                                                                                         |
+|T+ 00:01:26 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.6                                                         |
+|  · ALTITUDE               : 19798.42 m                                                  |
+|  · VITESSE SURFACE        : 722.26 m/s                                                  |
+|  · VITESSE ORBITALE       : 883.4 m/s                                                   |
+|  · PRESSION ATMOSPHÉRIQUE : 0.12 ATM / 12.203 kPA                                       |
+|                                                                                         |
+|T+ 00:02:46 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.37                                                        |
+|  · ALTITUDE               : 63936.67 m                                                  |
+|  · VITESSE SURFACE        : 1885.46 m/s                                                 |
+|  · VITESSE ORBITALE       : 2088.75 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0 ATM / 0.05 kPA                                            |
+|                                                                                         |
+|T+ 00:04:15 : Fin du Gravity Turn                                                        |
+|                                                                                         |
+|T+ 00:04:17 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 3079.19 m/s.                                                      |
+|  · Vitesse finale   : 3813.8 m/s.                                                       |
+|  · Delta-V          : 734.61 m/s.                                                       |
+|                                                                                         |
+|T+ 00:04:23 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 39.66 s.                                                     |
+|  · Temps avant manoeuvre : 00:01:22 s.                                                  |
+|                                                                                         |
+|T+ 00:05:45 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 00:50:56 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : 00:22:15 s.                                                  |
+|                                                                                         |
+|T+ 01:13:12 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 01:13:24 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 3j.11:55:05 : Enregistrement de la manoeuvre                                          |
+|  · Durée de la manoeuvre : 41.25 s.                                                     |
+|  · Temps avant manoeuvre : 09:26:32 s.                                                  |

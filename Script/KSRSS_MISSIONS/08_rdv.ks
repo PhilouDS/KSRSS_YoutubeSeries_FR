@@ -1,42 +1,51 @@
 clearScreen.
+switch to "main".
 
-switch to 1.
-
-if exists("lib:/KSRSS_log") {
-  runOncePath("lib:/KSRSS_log").
-} else {
+list processors in proc.
+local idx is 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_log") {
+    runOncePath("lib" + idx + ":/KSRSS_log").
+    break.
+  } else {set idx to idx + 1.}
+}
+if idx = proc:length {
   runOncePath("main:/KSRSS_log").
 }
-
-if exists("lib:/KSRSS_Manoeuvre") {
-  runOncePath("lib:/KSRSS_Manoeuvre").
-} else {
-  runOncePath("main:/KSRSS_Manoeuvre"). 
+set idx to 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_Outils") {
+    runOncePath("lib" + idx + ":/KSRSS_Outils").
+    break.
+  } else {set idx to idx + 1.}
 }
-
-if exists("lib:/KSRSS_Outils") {
-  runOncePath("lib:/KSRSS_Outils").
-} else {
+if idx >= proc:length {
   runOncePath("main:/KSRSS_Outils").
 }
-
-if exists("lib:/KSRSS_Stats") {
-  runOncePath("lib:/KSRSS_Stats").
-} else {
-  runOncePath("main:/KSRSS_Stats").
+set idx to 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_Manoeuvre") {
+    runOncePath("lib" + idx + ":/KSRSS_Manoeuvre").
+    break.
+  } else {set idx to idx + 1.}
 }
-
-if exists("lib:/KSRSS_RDV") {
-  runOncePath("lib:/KSRSS_RDV").
-} else {
-  runOncePath("main:/KSRSS_RDV").
+if idx = proc:length {
+  runOncePath("main:/KSRSS_Manoeuvre").
+}
+set idx to 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_Stats") {
+    runOncePath("lib" + idx + ":/KSRSS_Stats").
+    break.
+  } else {set idx to idx + 1.}
+}
+if idx >= proc:length {
+  runOncePath("main:/KSRSS_Stats").
 }
 
 logMission("RÉCUPÉRATION DES DONNÉES SCIENCE JR").
 
-set transmit to 1.
-
-set vesselTarget to VESSEL("JR-OBT").
+set vesselTarget to VESSEL("JR-OBT-H").
 set target to vesselTarget.
 local apoCible is 1.75 * vesselTarget:orbit:apoapsis.
 
@@ -71,18 +80,6 @@ wait until ship:verticalSpeed > 60.
 gravityTurn(apoCible, wantedAzimuth, 85).
 rcs on.
 wait 1.
-
-when homeConnection:isconnected AND exists("main:/" + ship:name + ".txt") then {
-  wait 0.
-  copyPath("main:/" + ship:name + ".txt", "0:/KSRSS_LOGS/" + ship:name + "_transmission_" + transmit + ".txt").
-  wait 0.
-  deletePath("main:/" + ship:name + ".txt").
-  wait 0.
-  set transmit to transmit + 1.
-  print "Transmission du log de mission".
-  wait 0.
-  preserve.
-}
 
 circularization("Ap").
 wait 1.

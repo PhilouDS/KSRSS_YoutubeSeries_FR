@@ -1,6 +1,14 @@
-if exists("lib:/KSRSS_log") {
-  runOncePath("lib:/KSRSS_log").
-} else {runOncePath("main:/KSRSS_log").}
+list processors in proc.
+local idx is 1.
+until idx = proc:length {
+  if exists("lib" + idx + ":/KSRSS_log") {
+    runOncePath("lib" + idx + ":/KSRSS_log").
+    break.
+  } else { set idx to idx + 1.}
+}
+if idx = proc:length {
+  runOncePath("main:/KSRSS_log").
+}
 
 //_________________________________________________
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -20,6 +28,7 @@ global function gravityTurn{
   logFlightEvent("Suivi du prograde : " + round(ship:verticalSpeed,1) + " m/s.").
   lock steering to heading(inclinaisonCible,90 - vAng(up:vector, srfPrograde:vector)).
   wait until ship:altitude >= 56000 or apoapsis >= 0.98*altitudeCible.
+  set navMode to "orbit".
   lock steering to heading(inclinaisonCible,90 - vAng(up:vector, Prograde:vector)).
   wait until apoapsis >= altitudeCible.
   lock throttle to 0.
