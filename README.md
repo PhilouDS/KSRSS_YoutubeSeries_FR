@@ -2,7 +2,7 @@
 
 _Codes kOS utilisés dans ma série youtube sur KSRSS._
 
-dernière maj : 29 novembre 2025
+dernière maj : 7 janvier 2026
 
 ## Important
 
