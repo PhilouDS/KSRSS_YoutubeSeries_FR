@@ -49,27 +49,7 @@ Au fur et à mesure de ma partie, tous les scripts sont indéniablement amenés 
 |  non détaillé ici
 |
 +---KSRSS_MISSIONS
-|       00_mnv.ks
-|       01_tout_droit.ks
-|       02_orbite.ks
-|       03_orbite_AR.ks
-|       04_orbite_polaire.ks
-|       05_survol_lune.ks
-|       06_orbite_lune.ks
-|       07_vers_Lune.ks
-|       08_rdv.ks
-|       09_geoOrbit.ks
-|       10_JR_espace_lointain.ks
-|       11_relais_lunaire.ks
-|       12a_docking_1.ks
-|       12b_docking_2.ks
-|       13_Touristes.ks
-|       14_geoOrbit_x4.ks
-|       15_alunissage.ks
-|       16_relais_lunaire_5M.ks
-|       17_alunissage_polaire.ks
-|       18_biomes_lunaires.ks
-|       18b_biomes_lunaires.ks
-|       19_Kerbal_orbite_lunaire.ks
-|       99_sauvetage.ks
+|
+|  non détaillé ici
+|
 ```
