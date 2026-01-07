@@ -45,6 +45,12 @@ global function rendezVous {
   // local higher is ship:orbit:periapsis > target:orbit:apoapsis.
   // if higher {lock steering to retrograde.}
 
+  local angleLimit is 20.
+  local timeLimit is 20.
+  if vesselTarget:orbit:apoapsis > 250_000 {
+    set angleLimit to 3.
+  }
+
   local targetAngle is computeTargetAngle(vesselTarget).
   if targetAngle < 180 {
     set targetAngle to 180 - targetAngle.
@@ -57,7 +63,8 @@ global function rendezVous {
   lock theDiff to phaseAngle - targetAngle.
   if targetAngle - 20 < 0 {lock theDiff to phaseAngle - 360 + targetAngle.}
 
-  until abs(theDiff) > 20 {set warp to 3.}
+  set warp to 3.
+  wait until abs(theDiff) > angleLimit.
   set warp to 0.
   wait until kuniverse:timewarp:rate = 1.
   wait 1.
@@ -70,7 +77,7 @@ global function rendezVous {
   print "Angle ciblé : " + round(targetAngle,2) + ("°     ") at (0,1).
 
   set warp to 4.
-  until abs(theDiff) < 20 {
+  until abs(theDiff) < angleLimit {
     print "Angle actuel : " + round(phaseAngle,2) + ("°     ") at (0,3).
   }
   set warp to 0.

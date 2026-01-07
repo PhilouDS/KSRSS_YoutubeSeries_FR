@@ -76,35 +76,35 @@ global function transfert {
   wait 0.
   add transferNode.
   wait 0.
-  local sign is 1.
-  if not(transferNode:orbit:hasnextpatch) {
-    print "POINT 1".
-    if transferNode:orbit:apoapsis > theTarget:orbit:apoapsis {
-      set sign to -1.
-    }
-    print sign.
-    local changePrograde is sign * 0.2.
-    print "POINT 2".
-    until transferNode:orbit:hasnextpatch {
-      set transferNode:prograde to transferNode:prograde + changePrograde.
-      wait 0.
-      print "PROGRADE : " + round(transferNode:prograde, 2) + " m/s    " at (0,terminal:height - 2).
-    }
-  }
-  wait 0.
-  print "POINT 3".
-  wait 0.1.
-  if transferNode:orbit:hasnextpatch {
-    print "POINT 4".
-    if (transferNode:orbit:inclination > 90 and not(reverseOrbit)) {
-      print "POINT 5".
-      until transferNode:orbit:inclination < 90 {
-        set transferNode:prograde to transferNode:prograde - 0.2.
-        wait 0.
-        print "INC. : " + round(transferNode:orbit:inclination, 1) + "°    " at (0,terminal:height - 2).
-      }
-    }
-  }
+  // local sign is 1.
+  // if not(transferNode:orbit:hasnextpatch) {
+  //   print "POINT 1".
+  //   if transferNode:orbit:apoapsis > theTarget:orbit:apoapsis {
+  //     set sign to -1.
+  //   }
+  //   print sign.
+  //   local changePrograde is sign * 0.2.
+  //   print "POINT 2". // BUG kOS -> paramètres incorrects/manquants ??
+  //   until transferNode:orbit:hasnextpatch {
+  //     set transferNode:prograde to transferNode:prograde + changePrograde.
+  //     wait 0.
+  //     print "PROGRADE : " + round(transferNode:prograde, 2) + " m/s    " at (0,terminal:height - 2).
+  //   }
+  // }
+  // wait 0.
+  // print "POINT 3".
+  // wait 0.1.
+  // if transferNode:orbit:hasnextpatch {
+  //   print "POINT 4".
+  //   if (transferNode:orbit:inclination > 90 and not(reverseOrbit)) {
+  //     print "POINT 5".
+  //     until transferNode:orbit:inclination < 90 {
+  //       set transferNode:prograde to transferNode:prograde - 0.2.
+  //       wait 0.
+  //       print "INC. : " + round(transferNode:orbit:inclination, 1) + "°    " at (0,terminal:height - 2).
+  //     }
+  //   }
+  // }
   
   exeMnv().
   wait 0.1.
@@ -118,6 +118,7 @@ global function transfert {
     alignFacing(sign * prograde:vector).
     thrustLimiter(5, false).
     lock throttle to 0.1.
+    wait until ship:orbit:hasnextpatch.
     wait until ship:orbit:nextPatch:body = theTarget.
     wait until ship:orbit:nextPatch:periapsis <= 3 * thePeriapsis.
     lock throttle to 0.
@@ -360,7 +361,6 @@ function cancelSurfaceVelocity {
   wait 0.
   lock throttle to 0.
   wait 0.
-
   if doStage = true {
     until stage:number=wantedStageNumber {
         wait until stage:ready.
@@ -376,10 +376,13 @@ function suicidBurn {
   parameter Kd.
   parameter stageToLand is 0.
 
-  until stage:number=stageToLand {
-      wait until stage:ready.
-      stage.
+  if stage:number<>stageToLand {
+    until stage:number=stageToLand {
+        wait until stage:ready.
+        stage.
+    }
   }
+
   wait 0.1.
 
   local start_line is 0.

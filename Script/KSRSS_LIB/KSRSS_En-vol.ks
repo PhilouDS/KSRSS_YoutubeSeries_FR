@@ -21,7 +21,7 @@ global function gravityTurn{
   addLogLeftEntry("  · Vitesse initiale : " + round(ship:verticalSpeed,1) + " m/s.").
   addLogLeftEntry("  · Angle initial    : " + pitchAngle + "°").
   local directionTilt is heading(inclinaisonCible, pitchAngle).
-  print("Pitch program.").
+  print("Pitch program -> " + pitchAngle + "°").
   lock steering to directionTilt.
   wait until vAng(facing:vector,directionTilt:vector) < 1.
   wait until vAng(srfPrograde:vector, facing:vector) < 1.

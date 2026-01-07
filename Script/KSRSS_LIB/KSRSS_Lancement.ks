@@ -80,7 +80,7 @@ global function decollage {
   wait 0.
   wait until ship:altitude > altitudeAtLaunchPad + 50.
   lock steering to heading(degreesFromNorth, pitchAboveHorizon).
-  print "Roll program.".
+  print "Roll program -> " + round(degreesFromNorth,1) + "°".
 }
 
 function compteRebours{
