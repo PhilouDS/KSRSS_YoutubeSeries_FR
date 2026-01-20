@@ -63,56 +63,32 @@ if idx >= proc:length {
   runOncePath("main:/KSRSS_Transfert").
 }
 
-set vesselTarget to VESSEL("RDV").
-if not vesselTarget:crew():empty {set kerbalToRescue to vesselTarget:crew()[0].}
-set target to vesselTarget.
-local coef_rdv is
-  choose 1.75 if vesselTarget:orbit:apoapsis < 200_000
-  else 0.6.
-local apoCible is coef_rdv * vesselTarget:orbit:apoapsis.
-set missionName to "MISSION DE SAUVETAGE - " + kerbalToRescue:name.
+local apoCible is 120_000.
+local wantedInclination is 90.
+local launchAzimut is 360 + correctionLaunchInclination(wantedInclination, apoCible).
 
+lock steering to heading(launchAzimut, 90).
+
+set missionName to "SCANNER ALTIMÉTRIQUE DE LA TERRE".
 logMission(missionName).
-
-logSection("VAISSEAU EN DÉTRESSE").
-addLogLeftEntry("Nous partons au secours de : " + kerbalToRescue:name).
-addLogLeftEntry("Son vaisseau est actuellement à " + round(target:altitude,2) + " m d'altitude.").
-emptyLogLine().
-
-local wantedInclination is vesselTarget:orbit:inclination.
-
-if abs(wantedInclination) > ship:geoposition:lat {
-  set wantedAzimuth to launchWindowAzimuth(vesselTarget, apoCible, wantedInclination).
-} else {
-  set wantedInclination to ship:geoposition:lat.
-  set wantedAzimuth to 90.
-  print("pas de fenêtre calculée").
-  wait 2.
-  logGeneralInfo(apoCible, wantedInclination, wantedAzimuth).
-}
-
-emptyLogLine().
-
+logGeneralInfo(apoCible, ship:geoposition:lat, launchAzimut).
 
 prelaunch().
-decollage(wantedAzimuth, 90).
-wait 1.
-triggerStaging(1).
+decollage(launchAzimut).
+wait 0.2.
+triggerStaging(0).
 
 
 when ship:altitude > atmAlt then {
   logFlightEvent("Espace atteint").
+  AG2 on.
+  logFlightEvent("Coiffe déployée").
 }
 
 wait 1.
 
-// valeur initiale pour la fusée K-Sauvetage 
-//wait until ship:verticalSpeed > 60.
-//gravityTurn(apoCible, wantedAzimuth, 85).
-
-// valeur pour les sauvetages lointains - K-OLB-LV45
-wait until ship:verticalSpeed > 70.
-gravityTurn(apoCible, wantedAzimuth, 85).
+wait until ship:verticalSpeed > 65.
+gravityTurn(apoCible, launchAzimut, 85).
 
 AG1 on.
 wait 1.
@@ -123,18 +99,11 @@ exeMnv().
 wait 0.
 logOrbitInfo().
 wait 1.
-
-correctionRelativeInclination(vesselTarget, 0.03).
+unlock steering.
 wait 1.
-circularization("Ap").
-wait 1.
-exeMnv().
+AG3 on. // SCANNERS
+logFlightEvent("Scanners activés").
 
-clearScreen.
-
-wait 1.
-rendezVous(vesselTarget).
-
-wait 1.
+wait 5.
 
 endProgram(-1, -1, false).

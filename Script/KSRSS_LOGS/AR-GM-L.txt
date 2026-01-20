@@ -1,0 +1,124 @@
+·_________________________________________________________________________________________·
+|                                ~ ÉCHANTILLONS LUNAIRES ~                                |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|FENÊTRE DE LANCEMENT    : 46, 09:19:02                                                   |
+|                                                                                         |
+|                                                                                         |
+|T+ 01:54:43 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 01:54:56 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 01:54:57 : Vitesse actuelle : 2136.81 m/s                                             |
+|                                                                                         |
+|T+ 01:55:14 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : 01:59:39 s.                                                  |
+|                                                                                         |
+|T+ 03:54:53 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 03:55:05 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 03:55:05 : Vitesse actuelle : 1361.27 m/s                                             |
+|                                                                                         |
+|T+ 5j.00:39:58 : Allumage des moteurs : début de la manoeuvre.                           |
+|                                                                                         |
+|T+ 5j.00:40:51 : Coupure des moteurs : fin de la manoeuvre                               |
+|                                                                                         |
+|T+ 5j.00:40:52 : Vitesse actuelle : 830.81 m/s                                           |
+|                                                                                         |
+|# INFORMATIONS DE L'ORBITE                                                               |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|Apogée                       : 9951.69 m                                                 |
+|Périgée                      : 9275.21 m                                                 |
+|Argument du périgée          : 269.7°                                                    |
+|Excentricité                 : 7.62 x 10^(-4)                                            |
+|Période orbitale             : 00:55:56                                                  |
+|Inclinaison                  : 50.673°                                                   |
+|Longitude du noeud ascendant : 88.86°                                                    |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 5j.01:07:33 : Début de la procédure d'atterrissage                                    |
+|                                                                                         |
+|T+ 5j.01:09:01 : Calculs des données pour l'allumage du moteur.                          |
+|                                                                                         |
+|# DONNÉES POUR LA PROCÉDURE D'ATTERRISSAGE                                               |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|RPP                 : 3.02                                                               |
+|Delta-V nécessaire  : 104.01 m/s                                                         |
+|Durée de l'allumage : 32.86 s                                                            |
+|Altitude d'allumage : 1729.13 m                                                          |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|# ATTERRISSAGE EFFECTUÉ                                                                  |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|T+ 5j.01:11:18 : Le vaisseau est stabilisé.                                              |
+|EMPLACEMENT                                                                              |
+|  · MOON, Highlands                                                                      |
+|  · LANDED                                                                               |
+|COORDONNÉES                                                                              |
+|  · longitude : -118.6749°                                                               |
+|  · latitude  : -0.2481°                                                                 |
+|  · altitude  : 3000 m au-dessus du niveau 0 (données altimétriques ScanSat)             |
+|                                                                                         |
+|                                                                                         |
+|T+ 5j.01:11:23 : Ouverture de la baie utilitaire.                                        |
+|                                                                                         |
+|T+ 5j.01:11:26 : Glairine mystérieuse : expérience en cours.                             |
+|                                                                                         |
+|T+ 5j.01:22:32 : Glairine mystérieuse : expérience terminée.                             |
+|                                                                                         |
+|T+ 5j.01:22:34 : Fermeture de la baie utilitaire.                                        |
+|                                                                                         |
+|T+ 5j.01:22:41 : Décollage de la Lune                                                    |
+|                                                                                         |
+|T+ 5j.01:23:59 : Coupure des moteurs                                                     |
+|                                                                                         |
+|T+ 5j.01:24:01 : Calcul d'un transfert de Hohmann                                        |
+|  · Vitesse initiale : 717.2 m/s.                                                        |
+|  · Vitesse finale   : 825.82 m/s.                                                       |
+|  · Delta-V          : 108.62 m/s.                                                       |
+|                                                                                         |
+|T+ 5j.01:24:08 : Enregistrement de la manoeuvre                                          |
+|  · Durée de la manoeuvre : 10 s.                                                        |
+|  · Temps avant manoeuvre : 00:02:51 s.                                                  |
+|                                                                                         |
+|T+ 5j.01:26:59 : Allumage des moteurs : début de la manoeuvre.                           |
+|                                                                                         |
+|T+ 5j.01:27:15 : Coupure des moteurs : fin de la manoeuvre                               |
+|                                                                                         |
+|T+ 5j.01:27:16 : Vitesse actuelle : 825.83 m/s                                           |
+|                                                                                         |
+|# INFORMATIONS DE L'ORBITE                                                               |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|Apogée                       : 15109.91 m                                                |
+|Périgée                      : 14964.5 m                                                 |
+|Argument du périgée          : 26.99°                                                    |
+|Excentricité                 : 1.62 x 10^(-4)                                            |
+|Période orbitale             : 00:56:58                                                  |
+|Inclinaison                  : 0.248°                                                    |
+|Longitude du noeud ascendant : 353.42°                                                   |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 5j.01:42:49 : Préparation de la manoeuvre vers la Terre                               |
+|                                                                                         |
+|T+ 5j.01:42:50 : Calcul d'un transfert de Hohmann                                        |
+|  · Vitesse initiale : 825.96 m/s.                                                       |
+|  · Vitesse finale   : 1152.83 m/s.                                                      |
+|  · Delta-V          : 326.87 m/s.                                                       |
+|                                                                                         |
+|T+ 5j.01:44:53 : Manoeuvre ajustée : +370.1 m/s                                          |
+|                                                                                         |
+|T+ 5j.01:44:58 : Enregistrement de la manoeuvre                                          |
+|  · Durée de la manoeuvre : 52.57 s.                                                     |
+|  · Temps avant manoeuvre : 00:42:18 s.                                                  |
+|                                                                                         |
+|T+ 5j.02:27:16 : Allumage des moteurs : début de la manoeuvre.                           |
+|                                                                                         |
+|T+ 5j.02:28:15 : Coupure des moteurs : fin de la manoeuvre                               |
+|                                                                                         |
+|T+ 5j.02:28:15 : Vitesse actuelle : 1351.32 m/s                                          |
+|                                                                                         |
+|T+ 5j.08:31:33 : La sonde est de retour dans la sphère d'influence de la Terre.          |
+
+TEMPÊTE SOLAIRE QUI A DURÉ TROP LONGTEMPS. BATTERIES HS

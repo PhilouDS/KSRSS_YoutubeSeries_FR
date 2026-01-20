@@ -188,12 +188,14 @@ global function correctionFutureInclinaison{
     else abs(wantedInc - correctNode:orbit:inclination).
 
   until abs(oldInclination - wantedInc) <= marginValue {
-    print ("Inc : ") + round(oldInclination,2) + "°     " at (0,1).
+    
+    print ("Cible   : ") + round(wantedInc,2) + "°     " at (0,1).
+    print ("Inc     : ") + round(oldInclination,2) + "°     " at (0,2).
 
-    print "Prograde : " + round(correctNode:prograde, 2) at (0,3).
-    print "Normal   : " + round(correctNode:normal, 2) at (0,4).
-    print "Radial   : " + round(correctNode:radialOut, 2) at (0,5).
-    print "Δv       : " + round(correctNode:deltaV:mag, 2) at (0,7).
+    print "Prograde : " + round(correctNode:prograde, 2) at (0,4).
+    print "Normal   : " + round(correctNode:normal, 2) at (0,5).
+    print "Radial   : " + round(correctNode:radialOut, 2) at (0,6).
+    print "Δv       : " + round(correctNode:deltaV:mag, 2) at (0,8).
     
     changeRadialOut(correctNode, deltaChange).
     newValue:add(incChanging). changeRadialIn(correctNode, deltaChange).
@@ -241,9 +243,12 @@ function correctionFuturPeriapsis{
   parameter marginValue is 1000.
   parameter doNextPatch is true.
   clearScreen.
-  local correctNode is node(time:seconds + newTime, 0, 0, 0).
+  local correctNode is choose
+    nextNode if newTime < 0 else
+    node(time:seconds + newTime, 0, 0, 0).
+  
   wait 0.1.
-  add correctNode.
+  if newTime > 0 {add correctNode.}
   wait 0.1.
 
   local newValue is list().
@@ -290,9 +295,6 @@ function correctionFuturPeriapsis{
   wait 0.5.
 }
 
-
-
-
 function changeRadialOut
   {parameter aNode, deltaChange. set aNode:radialout to aNode:radialOut + deltaChange.}
 function changeRadialIn
@@ -309,9 +311,6 @@ function addNodeTime
   {parameter aNode, deltaChange. set aNode:time to aNode:time + deltaChange.}
 function subNodeTime
   {parameter aNode, deltaChange. set aNode:time to aNode:time - deltaChange.}
-
-
-
 
 //_________________________________________________
 //‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -344,7 +343,6 @@ global function landing {
 
   wait 1.
 }
-
 
 function cancelSurfaceVelocity {
   parameter doStage is false.
@@ -394,15 +392,15 @@ function suicidBurn {
   wait 0.
   local tempAltitude is initialAltitude / 3.
 
-  set old_twr to calculTWR(0).
+  set old_twr to calculTWRbis(0).
   wait 0.
   set lim_thrust to 3 * 100 / old_twr.
   wait 0.
   thrustLimiter(lim_thrust, false).
   wait 0.1.
 
-  local burningAltitude is initialAltitude / calculTWR(0).
-  set new_twr to calculTWR(burningAltitude).
+  local burningAltitude is initialAltitude / calculTWRbis(0).
+  set new_twr to calculTWRbis(burningAltitude).
   local Vm is SQRT(2 * (initialAltitude - burningAltitude) * g_here()).
   local Tm is Vm / ((new_twr - 1) * g_here()).
 
@@ -470,6 +468,16 @@ function suicidBurn {
   wait 1.
 }
 
+function calculTWRbis {
+  parameter twrAltitude is ship:altitude.
+  //--- masse totale :
+  set totalMass to ship:mass.
+
+  set g_here to body:mu / ((body:radius + twrAltitude)^2).
+  return ship:availablethrust / (totalMass*g_here).
+}
+
+
 function groundSlope { // cheers Kevin
   local east is vectorCrossProduct(north:vector, up:vector).
 
@@ -487,9 +495,9 @@ function groundSlope { // cheers Kevin
 }
 
 global function inegaliteTriangulaire {
-  lock KerbinBody to Kerbin:altitudeOf(body:position).
-  lock ShipBody to body:altitudeOf(ship:position).
+  lock KerbinBody to Kerbin:altitudeOf(ship:body:position).
+  lock ShipBody to ship:body:altitudeOf(ship:position).
   lock ShipKerbin to Kerbin:altitudeOf(ship:position).
 
-  return abs((ShipKerbin + ShipBody) - (KerbinBody - body:radius)).
+  return abs((ShipKerbin + ShipBody) - (KerbinBody - ship:body:radius)).
 }

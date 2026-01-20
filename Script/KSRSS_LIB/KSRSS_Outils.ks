@@ -70,6 +70,10 @@ global function endProgram {
   clearScreen.
   print "FERMETURE DU PROGRAMME.".
   wait 1.
+  if recover = 1 {
+    logFlightEvent("Vaisseau en cours de récupération").
+  }
+  wait 0.
   logFinMission(maxAltitude).
   closeTerminal().
   unlock steering.
@@ -172,6 +176,7 @@ global function doWarp {
   parameter aTime.
   warpTo(aTime).
   wait until kuniverse:timewarp:rate = 1.
+  wait until kuniverse:timewarp:issettled.
   wait 1.
 }
 

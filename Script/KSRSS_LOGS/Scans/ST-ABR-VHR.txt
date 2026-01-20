@@ -1,0 +1,91 @@
+·_________________________________________________________________________________________·
+|                          ~ SCANNER ALTIMÉTRIQUE DE LA TERRE ~                           |
+·‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾·
+|                                                                                         |
+|# ÉTAT SPACE CENTER                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|FONDS      : √ 72466.49                                                                  |
+|SCIENCE    : ☆ 172.55                                                                    |
+|RÉPUTATION : ☺ 405.85                                                                    |
+|                                                                                         |
+|# INFORMATIONS GÉNÉRALES                                                                 |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE            : Year 3 Day 320 05:20:32                                                |
+|                                                                                         |
+|VAISSEAU        : ST-ABR-VHR                                                             |
+|  · Vaisseau entièrement automatisé                                                      |
+|                                                                                         |
+|COÛT                 : √ 37102.73                                                        |
+|HAUTEUR              : 23.97 m                                                           |
+|MASSE                : 38.245 t                                                          |
+|RPP                  : 1.28                                                              |
+|Nombre d'étages      : 4                                                                 |
+|Nombre de composants : 28                                                                |
+|                                                                                         |
+|# DONNÉES INITIALES DU LANCEMENT                                                         |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|APOASTRE SOUHAITÉE    : 120000 m                                                         |
+|INCLINAISON SOUHAITÉE : 5.09999923117631°                                                |
+|AZIMUT DE LANCEMENT   : 356.528°                                                         |
+|                                                                                         |
+|# ÉVÉNEMENTS DE VOL                                                                      |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:00:00 : Décollage                                                                  |
+|                                                                                         |
+|T+ 00:00:18 : Début du Gravity Turn                                                      |
+|  · Vitesse initiale : 66.6 m/s.                                                         |
+|  · Angle initial    : 85°                                                               |
+|                                                                                         |
+|T+ 00:00:25 : Suivi du prograde : 96 m/s.                                                |
+|                                                                                         |
+|T+ 00:02:17 : Fin du Gravity Turn                                                        |
+|                                                                                         |
+|T+ 00:02:46 : Espace atteint                                                             |
+|                                                                                         |
+|T+ 00:02:47 : Coiffe déployée                                                            |
+|                                                                                         |
+|T+ 00:02:48 : Calcul d'un transfert de Hohmann                                           |
+|  · Vitesse initiale : 1658.48 m/s.                                                      |
+|  · Vitesse finale   : 3813.66 m/s.                                                      |
+|  · Delta-V          : 2155.18 m/s.                                                      |
+|                                                                                         |
+|T+ 00:03:00 : Enregistrement de la manoeuvre                                             |
+|  · Durée de la manoeuvre : 82.28 s.                                                     |
+|  · Temps avant manoeuvre : 00:00:52 s.                                                  |
+|                                                                                         |
+|T+ 00:03:52 : Allumage des moteurs : début de la manoeuvre.                              |
+|                                                                                         |
+|T+ 00:04:19 : Séparation d'étage réalisée.                                               |
+|  · RPP                    : 1.68                                                        |
+|  · ALTITUDE               : 119287.52 m                                                 |
+|  · VITESSE SURFACE        : 2882.1 m/s                                                  |
+|  · VITESSE ORBITALE       : 2889.35 m/s                                                 |
+|  · PRESSION ATMOSPHÉRIQUE : 0 ATM / 0 kPA                                               |
+|                                                                                         |
+|T+ 00:05:22 : Coupure des moteurs : fin de la manoeuvre                                  |
+|                                                                                         |
+|T+ 00:05:22 : Vitesse actuelle : 3808.97 m/s                                             |
+|                                                                                         |
+|# INFORMATIONS DE L'ORBITE                                                               |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|Apogée                       : 139994.61 m                                               |
+|Périgée                      : 100844.81 m                                               |
+|Argument du périgée          : 285.5°                                                    |
+|Excentricité                 : 114.26 x 10^(-4)                                          |
+|Période orbitale             : 00:47:02                                                  |
+|Inclinaison                  : 86.015°                                                   |
+|Longitude du noeud ascendant : 163.6°                                                    |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|                                                                                         |
+|T+ 00:05:27 : Scanners activés                                                           |
+|_________________________________________________________________________________________|
+|                                  ~ FIN DE LA MISSION ~                                  |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+|                                                                                         |
+|# RÉCAPITULATIF                                                                          |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                                            |
+|DATE DE FIN                : Year 3 Day 320 05:26:17                                     |
+|DURÉE DE LA MISSION        : 00:05:35                                                    |
+|                                                                                         |
+|_________________________________________________________________________________________|
